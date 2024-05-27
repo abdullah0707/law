@@ -6,30 +6,14 @@ html[dir="rtl"] {
 } */
 
 * {
-  font-family: "Tajawal", sans-serif;
+  font-family: "Tajawal", "Font Awesome 6 Pro", sans-serif;
 }
 body {
   background-color: rgba(247, 247, 247, 1) !important;
 }
 /* width */
 ::-webkit-scrollbar {
-  width: 0.7rem;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  background: #f1f1f1;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #555;
-  border-radius: 1rem;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #8e1416;
+  width: 0rem;
 }
 
 /* Start All Media */
@@ -119,7 +103,7 @@ body {
     padding: 2% 0.5% !important;
   } */
   .table {
-    width: 80vw !important;
+    width: 77vw !important;
     height: 100%;
   }
 }
@@ -130,7 +114,7 @@ body {
     padding: 4% 0.5% !important;
   } */
   .table {
-    width: 79vw !important;
+    width: 77vw !important;
     height: 100%;
   }
 }
@@ -440,4 +424,10 @@ input[type="search" i]:enabled:read-write::-webkit-search-cancel-button {
 
 .cart-column-content {
   width: 20rem;
+}
+
+.dropdown-toggle::after {
+  margin-left: 0.255em;
+  vertical-align: 0.255em;
+  border: 0 !important;
 }
