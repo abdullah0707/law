@@ -11,12 +11,33 @@ html[dir="rtl"] {
 body {
   background-color: rgba(247, 247, 247, 1) !important;
 }
+/* width */
+::-webkit-scrollbar {
+  width: 0.7rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #555;
+  border-radius: 1rem;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #8e1416;
+}
+
 /* Start All Media */
 /* // Small devices (landscape phones, 576px and up) */
 @media (min-width: 320px) and (max-width: 576px) {
-  .icon-dashboard {
+  /* .icon-dashboard {
     padding: 27.3% 0% 0% !important;
-  }
+  } */
   .col-sm-1 {
     flex: 0 0 auto !important;
     width: 20% !important;
@@ -36,42 +57,42 @@ body {
   .tabs .tab-content {
     top: 19.8rem !important;
   }
-  .cart-column-content {
-    width: 16.2rem !important;
-  }
 }
 @media (min-width: 319px) {
   .cart-column-content {
-    width: 13.7rem !important;
+    width: 12.9rem !important;
   }
 }
 @media (min-width: 374px) {
   .cart-column-content {
-    width: 16.27rem !important;
+    width: 15.6rem !important;
   }
 }
 @media (min-width: 424px) {
   .cart-column-content {
-    width: 18.7rem !important;
+    width: 18.1rem !important;
   }
 }
 
 /* // Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-  .icon-dashboard {
+  /* .icon-dashboard {
     padding: 13.3% 0% 0% !important;
-  }
+  } */
   .table {
     width: 170vw !important;
     height: 100%;
+  }
+  .cart-column-content {
+    width: 20.7rem !important;
   }
 }
 
 /* // Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-  .icon-dashboard {
+  /* .icon-dashboard {
     padding: 9.5% 0% 0% !important;
-  }
+  } */
   .table {
     width: 70vw !important;
     height: 100%;
@@ -80,9 +101,9 @@ body {
 
 /* // X-Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-  .icon-dashboard {
+  /* .icon-dashboard {
     padding: 6.3% 0% 0% !important;
-  }
+  } */
   .table {
     width: 68vw !important;
     height: 100%;
@@ -91,9 +112,9 @@ body {
 
 /* // XX-Large devices (larger desktops, 1400px and up) */
 @media (min-width: 1400px) {
-  .icon-dashboard {
-    padding: 7.3% 0% 0% !important;
-  }
+  /* .icon-dashboard {
+    padding: 5.3% 0% 0% !important;
+  } */
   /* .numbar-day-calender {
     padding: 2% 0.5% !important;
   } */
@@ -115,6 +136,16 @@ body {
 }
 /* End All Media */
 
+.icon-dashboard {
+  padding-top: 1em;
+}
+.nav {
+  position: relative;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
 /* Start Form LogIn */
 .form-check-input:checked {
   background-color: #8e1416 !important;

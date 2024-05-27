@@ -88,11 +88,7 @@ function calender(month, year) {
     }
     table.innerHTML = html;
     var inputDate = document.querySelector('input[type="date"]');
-    // var numbarMonth = dateObj.getMonth() ;
-    // console.log(numbarMonth);
-
     inputDate.value = year + '-' + CurrentMonths[month] + '-' + today;
-    // console.log(inputDate.value);
 }
 calender(month, year);
 
