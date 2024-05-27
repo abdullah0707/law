@@ -1,0 +1,615 @@
+<!doctype html>
+<html lang="en" dir="rtl">
+
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>Law demo</title>
+   <!-- style css -->
+   <link rel="stylesheet" href="./assate/css/style.css">
+
+   <!-- Bootstrap -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+   <!-- font awesome - icons -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+   <!-- Font Google - EN -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet">
+
+   <!-- Font Google - AR -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap"
+      rel="stylesheet">
+
+</head>
+
+<body>
+   <nav class="navbar fixed-top background-danger">
+      <div class="container-fluid justify-content-between align-items-center">
+         <a class="navbar-brand mx-2" href="#">
+            <img src="./assate/img/Isolation_Mode_navbar.svg" alt="Logo" width="33" height="52">
+         </a>
+         <div class="contact">
+            <a class="navbar-brand text-white" href="#" style="font-size: large;">
+               <i class="fa-solid fa-gear"></i>
+            </a>
+            <a class="navbar-brand text-white" href="#" style="font-size: large;">
+               <i class="fa-solid fa-bell"></i>
+            </a>
+            <a class="navbar-brand rounded-circle" href="#" style="font-size: large;">
+               <img src="./assate/img/Avatar.svg" alt="avatar" width="24" height="24">
+            </a>
+         </div>
+      </div>
+   </nav>
+   <div class="container-fluid" style="height: 100vh;">
+      <div class="row h-100">
+         <div class="col-sm-1 bg-white shadow h-100 icon-dashboard overflow-hidden">
+            <div class="list-group border-0">
+               <a href="#" class="list-group-item list-group-item-action border-0 py-1 ps-0 pe-2 pe-md-2 pe-lg-3">
+                  <p class="d-flex justify-content-center item-action-dashboard m-0 " style="padding: 0.8em 0.3em;">
+                     <svg class="mx-2" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                           d="M2.5 12C2.5 7.52166 2.5 5.28249 3.89124 3.89124C5.28249 2.5 7.52166 2.5 12 2.5C16.4783 2.5 18.7175 2.5 20.1088 3.89124C21.5 5.28249 21.5 7.52166 21.5 12C21.5 16.4783 21.5 18.7175 20.1088 20.1088C18.7175 21.5 16.4783 21.5 12 21.5C7.52166 21.5 5.28249 21.5 3.89124 20.1088C2.5 18.7175 2.5 16.4783 2.5 12Z"
+                           stroke="currentColor" stroke-width="1.5" />
+                        <path d="M2.5 9H21.5" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+                        <path d="M6.99981 6H7.00879" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                           stroke-linejoin="round" />
+                        <path d="M10.9998 6H11.0088" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                           stroke-linejoin="round" />
+                        <path d="M17 17C17 14.2386 14.7614 12 12 12C9.23858 12 7 14.2386 7 17" stroke="currentColor"
+                           stroke-width="1.5" stroke-linecap="round" />
+                        <path d="M12.707 15.293L11.2928 16.7072" stroke="currentColor" stroke-width="1.5"
+                           stroke-linecap="round" stroke-linejoin="round" />
+                     </svg>
+                     <!-- <span class="d-none d-lg-flex" style="font-size: 90%;">
+                        لوحة المعلومات
+                     </span> -->
+                  </p>
+               </a>
+               <a href="#" class="list-group-item list-group-item-action border-0 py-1 ps-0 pe-2 pe-md-2 pe-lg-3">
+                  <p class="d-flex justify-content-center item-action-dashboard m-0" style="padding: 0.8em 0.3em;">
+                     <svg class="mx-2" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 2V4M6 2V4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                           stroke-linejoin="round" />
+                        <path d="M11.9955 13H12.0045M11.9955 17H12.0045M15.991 13H16M8 13H8.00897M8 17H8.00897"
+                           stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M3.5 8H20.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                           stroke-linejoin="round" />
+                        <path
+                           d="M2.5 12.2432C2.5 7.88594 2.5 5.70728 3.75212 4.35364C5.00424 3 7.01949 3 11.05 3H12.95C16.9805 3 18.9958 3 20.2479 4.35364C21.5 5.70728 21.5 7.88594 21.5 12.2432V12.7568C21.5 17.1141 21.5 19.2927 20.2479 20.6464C18.9958 22 16.9805 22 12.95 22H11.05C7.01949 22 5.00424 22 3.75212 20.6464C2.5 19.2927 2.5 17.1141 2.5 12.7568V12.2432Z"
+                           stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M3 8H21" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                           stroke-linejoin="round" />
+                     </svg>
+                     <!-- <span class="d-none d-lg-flex" style="font-size: 90%;">
+                        إدارة جدول المواعيد
+                     </span> -->
+                  </p>
+               </a>
+               <a href="#" class="list-group-item list-group-item-action border-0 py-1 ps-0 pe-2 pe-md-2 pe-lg-3">
+                  <p class="d-flex justify-content-center item-action-dashboard m-0 active-dashboard-text"
+                     style="padding: 0.8em 0.3em;">
+                     <svg class="mx-2" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                           d="M4 17.9808V9.70753C4 6.07416 4 4.25748 5.17157 3.12874C6.34315 2 8.22876 2 12 2C15.7712 2 17.6569 2 18.8284 3.12874C20 4.25748 20 6.07416 20 9.70753V17.9808C20 20.2867 20 21.4396 19.2272 21.8523C17.7305 22.6514 14.9232 19.9852 13.59 19.1824C12.8168 18.7168 12.4302 18.484 12 18.484C11.5698 18.484 11.1832 18.7168 10.41 19.1824C9.0768 19.9852 6.26947 22.6514 4.77285 21.8523C4 21.4396 4 20.2867 4 17.9808Z"
+                           stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M4 7H20" stroke="currentColor" stroke-width="1.5" />
+                     </svg>
+                     <!-- <span class="d-none d-lg-flex" style="font-size: 90%;">
+                        إدارة المهام
+                     </span> -->
+
+                  </p>
+               </a>
+               <a href="#" class="list-group-item list-group-item-action border-0 py-1 ps-0 pe-2 pe-md-2 pe-lg-3">
+                  <p class="d-flex justify-content-center item-action-dashboard m-0" style="padding: 0.8em 0.3em;">
+                     <svg class="mx-2" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                           d="M2 19.5C2 18.3215 2 17.7322 2.43934 17.3661C2.87868 17 3.58579 17 5 17C6.41421 17 7.12132 17 7.56066 17.3661C8 17.7322 8 18.3215 8 19.5C8 20.6785 8 21.2678 7.56066 21.6339C7.12132 22 6.41421 22 5 22C3.58579 22 2.87868 22 2.43934 21.6339C2 21.2678 2 20.6785 2 19.5Z"
+                           stroke="currentColor" stroke-width="1.5" />
+                        <path
+                           d="M16 19.5C16 18.3215 16 17.7322 16.4393 17.3661C16.8787 17 17.5858 17 19 17C20.4142 17 21.1213 17 21.5607 17.3661C22 17.7322 22 18.3215 22 19.5C22 20.6785 22 21.2678 21.5607 21.6339C21.1213 22 20.4142 22 19 22C17.5858 22 16.8787 22 16.4393 21.6339C16 21.2678 16 20.6785 16 19.5Z"
+                           stroke="currentColor" stroke-width="1.5" />
+                        <path d="M19 17C19 13.6907 18.2562 13 14.6923 13H9.30769C5.74379 13 5 13.6907 5 17"
+                           stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                           d="M12 10H12.5625C14.1425 10 14.9325 10 15.5 9.62549C15.7457 9.46336 15.9566 9.25502 16.1208 9.01238C16.5 8.45188 16.5 7.67163 16.5 6.11111C16.5 5.1748 16.5 4.70665 16.2725 4.37035C16.174 4.22476 16.0474 4.09976 15.9 4.00249C15.5595 3.77778 15.0855 3.77778 14.1375 3.77778H12.6425C12.5126 3.77778 12.4476 3.77778 12.3879 3.76912C12.1645 3.73672 11.9647 3.61544 11.8358 3.43402C11.8014 3.38555 11.7726 3.32861 11.715 3.21472C11.4788 2.74826 11.263 2.27872 10.7397 2.08489C10.5105 2 10.2486 2 9.72492 2C8.90751 2 8.4988 2 8.19213 2.16903C7.97352 2.28952 7.79314 2.46767 7.67114 2.68358C7.5 2.98647 7.5 3.39013 7.5 4.19745V5.55556C7.5 7.65069 7.5 8.69825 8.15901 9.34913C8.81802 10 9.87868 10 12 10Z"
+                           stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                     </svg>
+                     <!-- <span class="d-none d-lg-flex" style="font-size: 90%;">
+                        إدارة الملفات
+                     </span> -->
+                  </p>
+               </a>
+               <a href="#" class="list-group-item list-group-item-action border-0 py-1 ps-0 pe-2 pe-md-2 pe-lg-3">
+                  <p class="d-flex justify-content-center item-action-dashboard m-0" style="padding: 0.8em 0.3em;">
+                     <svg class="mx-2" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                           d="M7.50304 4C7.48421 3.62851 7.55185 3.34156 7.73579 3.1C8.19267 2.5 9.12335 2.5 10.9847 2.5H13.0153C14.8766 2.5 15.8073 2.5 16.2642 3.1C16.4481 3.34156 16.5158 3.62851 16.497 4"
+                           stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                           d="M5 8C5.03784 7.74037 5.12478 7.51593 5.26968 7.31431C5.85493 6.5 7.0681 6.5 9.49444 6.5H14.5056C16.9319 6.5 18.1451 6.5 18.7303 7.31431C18.8752 7.51593 18.9622 7.74037 19 8"
+                           stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                           d="M3.81753 15.7128L4.53641 18.016C5.43193 20.8852 6.19729 21.5 9.21027 21.5H14.7897C17.8027 21.5 18.5681 20.8852 19.4636 18.016L20.1825 15.7128C20.9261 13.3303 21.2979 12.139 20.7101 11.3195C20.1223 10.5 18.896 10.5 16.4434 10.5H7.55662C5.104 10.5 3.8777 10.5 3.28988 11.3195C2.70207 12.139 3.07389 13.3303 3.81753 15.7128Z"
+                           stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                     </svg>
+                     <!-- <span class="d-none d-lg-flex" style="font-size: 90%;">
+                        إدارة الأرشيف
+                     </span> -->
+                  </p>
+               </a>
+               <a href="#" class="list-group-item list-group-item-action border-0 py-1 ps-0 pe-2 pe-md-2 pe-lg-3">
+                  <p class="d-flex justify-content-center item-action-dashboard m-0" style="padding: 0.8em 0.3em;">
+                     <svg class="mx-2" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14 8.99988H18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                        <path d="M14 12.4999H17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                        <rect x="2" y="2.99988" width="20" height="18" rx="5" stroke="currentColor" stroke-width="1.5"
+                           stroke-linejoin="round" />
+                        <path d="M5 15.9999C6.20831 13.4188 10.7122 13.249 12 15.9999" stroke="currentColor"
+                           stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                           d="M10.5 8.99988C10.5 10.1044 9.60457 10.9999 8.5 10.9999C7.39543 10.9999 6.5 10.1044 6.5 8.99988C6.5 7.89531 7.39543 6.99988 8.5 6.99988C9.60457 6.99988 10.5 7.89531 10.5 8.99988Z"
+                           stroke="currentColor" stroke-width="1.5" />
+                     </svg>
+                     <!-- <span class="d-none d-lg-flex" style="font-size: 90%;">
+                        قائمة العملاء
+                     </span> -->
+
+                  </p>
+               </a>
+               <a href="#" class="list-group-item list-group-item-action border-0 py-1 ps-0 pe-2 pe-md-2 pe-lg-3">
+                  <p class="d-flex justify-content-center item-action-dashboard m-0" style="padding: 0.8em 0.3em;">
+                     <svg class="mx-2" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                           d="M6.57757 15.4816C5.1628 16.324 1.45336 18.0441 3.71266 20.1966C4.81631 21.248 6.04549 22 7.59087 22H16.4091C17.9545 22 19.1837 21.248 20.2873 20.1966C22.5466 18.0441 18.8372 16.324 17.4224 15.4816C14.1048 13.5061 9.89519 13.5061 6.57757 15.4816Z"
+                           stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                           d="M16.5 6.5C16.5 8.98528 14.4853 11 12 11C9.51472 11 7.5 8.98528 7.5 6.5C7.5 4.01472 9.51472 2 12 2C14.4853 2 16.5 4.01472 16.5 6.5Z"
+                           stroke="currentColor" stroke-width="1.5" />
+                     </svg>
+                     <!-- <span class="d-none d-lg-flex" style="font-size: 90%;">
+                        المستخدمين
+                     </span> -->
+
+                  </p>
+               </a>
+               <a href="#" class="list-group-item list-group-item-action border-0 py-1 ps-0 pe-2 pe-md-2 pe-lg-3">
+                  <p class="d-flex justify-content-center item-action-dashboard m-0" style="padding: 0.8em 0.3em;">
+                     <svg class="mx-2" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                           d="M15.5 12C15.5 13.933 13.933 15.5 12 15.5C10.067 15.5 8.5 13.933 8.5 12C8.5 10.067 10.067 8.5 12 8.5C13.933 8.5 15.5 10.067 15.5 12Z"
+                           stroke="currentColor" stroke-width="1.5" />
+                        <path
+                           d="M21.011 14.0965C21.5329 13.9558 21.7939 13.8854 21.8969 13.7508C22 13.6163 22 13.3998 22 12.9669V11.0332C22 10.6003 22 10.3838 21.8969 10.2493C21.7938 10.1147 21.5329 10.0443 21.011 9.90358C19.0606 9.37759 17.8399 7.33851 18.3433 5.40087C18.4817 4.86799 18.5509 4.60156 18.4848 4.44529C18.4187 4.28902 18.2291 4.18134 17.8497 3.96596L16.125 2.98673C15.7528 2.77539 15.5667 2.66972 15.3997 2.69222C15.2326 2.71472 15.0442 2.90273 14.6672 3.27873C13.208 4.73448 10.7936 4.73442 9.33434 3.27864C8.95743 2.90263 8.76898 2.71463 8.60193 2.69212C8.43489 2.66962 8.24877 2.77529 7.87653 2.98663L6.15184 3.96587C5.77253 4.18123 5.58287 4.28891 5.51678 4.44515C5.45068 4.6014 5.51987 4.86787 5.65825 5.4008C6.16137 7.3385 4.93972 9.37763 2.98902 9.9036C2.46712 10.0443 2.20617 10.1147 2.10308 10.2492C2 10.3838 2 10.6003 2 11.0332V12.9669C2 13.3998 2 13.6163 2.10308 13.7508C2.20615 13.8854 2.46711 13.9558 2.98902 14.0965C4.9394 14.6225 6.16008 16.6616 5.65672 18.5992C5.51829 19.1321 5.44907 19.3985 5.51516 19.5548C5.58126 19.7111 5.77092 19.8188 6.15025 20.0341L7.87495 21.0134C8.24721 21.2247 8.43334 21.3304 8.6004 21.3079C8.76746 21.2854 8.95588 21.0973 9.33271 20.7213C10.7927 19.2644 13.2088 19.2643 14.6689 20.7212C15.0457 21.0973 15.2341 21.2853 15.4012 21.3078C15.5682 21.3303 15.7544 21.2246 16.1266 21.0133L17.8513 20.034C18.2307 19.8187 18.4204 19.711 18.4864 19.5547C18.5525 19.3984 18.4833 19.132 18.3448 18.5991C17.8412 16.6616 19.0609 14.6226 21.011 14.0965Z"
+                           stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                     </svg>
+                     <!-- <span class="d-none d-lg-flex" style="font-size: 90%;">
+                        الإعدادات
+                     </span> -->
+                  </p>
+               </a>
+               <!-- Start Calender -->
+               <div id="calender" dir="ltr">
+                  <div class="nav justify-content-center ">
+                     <a id="prev" class="d-none">
+                        <i class="fa-solid fa-chevron-left"></i>
+                     </a>
+                     <p class="m-0 d-flex align-items-center flex-column">
+                        <span id="year" class="d-none px-2"></span>
+                        <span id="month" class="d-none"></span>
+                        <span id="todayName" class="d-flex"></span>
+                        <span id="todayNumber" class="d-flex"></span>
+                     </p>
+                     <a id="next" class="d-none">
+                        <i class="fa-solid fa-chevron-right"></i>
+                     </a>
+                  </div>
+                  <!-- <div class="d-lg-block d-none w-100">
+                     <table id="cal"></table>
+                  </div> -->
+               </div>
+               <!-- End Calender -->
+            </div>
+         </div>
+         <div class="col-xl-11 col-lg-11 col-sm-11 px-2 px-md-4 overflow-auto icon-dashboard" style="height: 100vh;">
+            <div class="container-fluid">
+               <div class="nav-filter d-flex justify-content-between w-100 mb-3 flex-column flex-md-row">
+                  <div class="right-nav-filter d-flex align-items-center">
+                     <p class="m-0 d-flex align-items-center">
+                        <svg class="mx-1" width="20" height="21" viewBox="0 0 20 21" fill="none"
+                           xmlns="http://www.w3.org/2000/svg">
+                           <path
+                              d="M7.5 13.5H12.5C12.7761 13.5 13 13.7239 13 14C13 14.2455 12.8231 14.4496 12.5899 14.4919L12.5 14.5H7.5C7.22386 14.5 7 14.2761 7 14C7 13.7545 7.17688 13.5504 7.41012 13.5081L7.5 13.5H12.5H7.5ZM5.5 9.5H14.5C14.7761 9.5 15 9.72386 15 10C15 10.2455 14.8231 10.4496 14.5899 10.4919L14.5 10.5H5.5C5.22386 10.5 5 10.2761 5 10C5 9.75454 5.17688 9.55039 5.41012 9.50806L5.5 9.5H14.5H5.5ZM3.5 5.5H16.5C16.7761 5.5 17 5.72386 17 6C17 6.24546 16.8231 6.44961 16.5899 6.49194L16.5 6.5H3.5C3.22386 6.5 3 6.27614 3 6C3 5.75454 3.17688 5.55039 3.41012 5.50806L3.5 5.5H16.5H3.5Z"
+                              fill="currentColor" />
+                        </svg>
+                        فلترة
+                     </p>
+                     <div class="input-group me-2" dir="ltr">
+                        <input class="form-control text-end border-end-0 pe-1" aria-label="Recipient's username"
+                           aria-describedby="basic-addon2" type="search" placeholder="Search" dir="rtl">
+                        <span class="input-group-text bg-white border-start-0 ps-1" id="basic-addon2">
+                           <i class="fa-solid fa-magnifying-glass"></i>
+                        </span>
+                     </div>
+                  </div>
+                  <div class="left-nav-filter d-flex gap-2 flex-column flex-md-row my-2">
+                     <div class="" role="group" aria-label="Vertical radio toggle button group">
+                        <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio3" autocomplete="off">
+                        <label class="btn w-100
+                        " style="border-color: #8e1416; color: #8e1416;" for="vbtn-radio3">
+                           المهام على التقويم
+                           <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                 d="M18.0012 3.5C19.7961 3.5 21.2512 4.95507 21.2512 6.75V18.25C21.2512 20.0449 19.7961 21.5 18.0012 21.5H6.50122C4.7063 21.5 3.25122 20.0449 3.25122 18.25V6.75C3.25122 4.95507 4.7063 3.5 6.50122 3.5H18.0012ZM19.7512 9H4.75122V18.25C4.75122 19.2165 5.53472 20 6.50122 20H18.0012C18.9677 20 19.7512 19.2165 19.7512 18.25V9ZM8.00122 15C8.69158 15 9.25122 15.5596 9.25122 16.25C9.25122 16.9404 8.69158 17.5 8.00122 17.5C7.31086 17.5 6.75122 16.9404 6.75122 16.25C6.75122 15.5596 7.31086 15 8.00122 15ZM12.2512 15C12.9416 15 13.5012 15.5596 13.5012 16.25C13.5012 16.9404 12.9416 17.5 12.2512 17.5C11.5609 17.5 11.0012 16.9404 11.0012 16.25C11.0012 15.5596 11.5609 15 12.2512 15ZM8.00122 11C8.69158 11 9.25122 11.5596 9.25122 12.25C9.25122 12.9404 8.69158 13.5 8.00122 13.5C7.31086 13.5 6.75122 12.9404 6.75122 12.25C6.75122 11.5596 7.31086 11 8.00122 11ZM12.2512 11C12.9416 11 13.5012 11.5596 13.5012 12.25C13.5012 12.9404 12.9416 13.5 12.2512 13.5C11.5609 13.5 11.0012 12.9404 11.0012 12.25C11.0012 11.5596 11.5609 11 12.2512 11ZM16.5012 11C17.1916 11 17.7512 11.5596 17.7512 12.25C17.7512 12.9404 17.1916 13.5 16.5012 13.5C15.8109 13.5 15.2512 12.9404 15.2512 12.25C15.2512 11.5596 15.8109 11 16.5012 11ZM18.0012 5H6.50122C5.53472 5 4.75122 5.7835 4.75122 6.75V7.5H19.7512V6.75C19.7512 5.7835 18.9677 5 18.0012 5Z"
+                                 fill="currentColor" />
+                           </svg>
+                        </label>
+                     </div>
+                     <div class="btn-group" role="group">
+                        <button type="button" class="btn background-danger text-white dropdown-toggle"
+                           data-bs-toggle="dropdown" aria-expanded="false">
+                           <i class="fa-solid fa-plus"></i>
+                           إضافة مهمة
+                        </button>
+                        <ul class="dropdown-menu">
+                           <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+                           <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+                        </ul>
+                     </div>
+
+                  </div>
+               </div>
+               <div class="row flex-nowrap overflow-scroll gap-md-1" style="gap: 8rem;">
+                  <div class="column-carts w-auto">
+                     <div class="header-column d-flex justify-content-between">
+                        <p class="right-header-column  fw-bold">
+                           مهام اليوم
+                        </p>
+                        <p class="left-header-column fw-semibold p-1 rounded-2">
+                           5 مهام
+                        </p>
+                     </div>
+                     <button type="button" class="btn bg-white border-opacity-25 border-dark shadow-sm w-100">
+                        <i class="fa-solid fa-plus"></i>
+                     </button>
+                     <div class="card cart-column-content bg-white shadow-sm my-3">
+                        <div class="header-cart d-flex justify-content-between pt-3 px-3">
+                           <div>
+                              <p class="fw-bold m-0">اسم المهمة 11-15</p>
+                              <p class=" m-0" style="font-size: .95rem;"> Until 11/30 <b>•</b> Strategy </p>
+                           </div>
+                           <a href="#" class="setting-cart text-black">
+                              <i class="fa-solid fa-ellipsis"></i>
+                           </a>
+                        </div>
+                        <div class="card-body">
+                           Change to updated data for the tables in slides for final review on Thursday.
+                        </div>
+                        <div class="footer-cart d-flex justify-content-between px-3 pb-3">
+                           <div class="right-footer-cart d-flex gap-1">
+                              <img class="rounded-circle" width="28" height="28"
+                                 src="./assate/img/Avatar (Fluent 2).png" alt="">
+                              <img class="rounded-circle" width="28" height="28"
+                                 src="./assate/img/Avatar (Fluent 2).png" alt="">
+                           </div>
+                           <div class="left-footer-cart text-black-50">1
+                              <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                 <path
+                                    d="M4.82841 10.4852L10.4853 4.82839C11.6568 3.65681 13.5563 3.65681 14.7279 4.82839C15.8995 5.99996 15.8995 7.89945 14.7279 9.07103L8.01039 15.7885C7.4246 16.3743 6.47485 16.3743 5.88907 15.7885C5.30328 15.2028 5.30328 14.253 5.88907 13.6672L11.8995 7.65681C12.0947 7.46155 12.0947 7.14497 11.8995 6.94971C11.7042 6.75444 11.3876 6.75444 11.1924 6.94971L5.18196 12.9601C4.20565 13.9364 4.20565 15.5193 5.18196 16.4956C6.15827 17.472 7.74118 17.472 8.71749 16.4956L15.435 9.77813C16.9971 8.21604 16.9971 5.68338 15.435 4.12128C13.8729 2.55918 11.3403 2.55918 9.77815 4.12128L4.1213 9.77813C3.92604 9.9734 3.92604 10.29 4.1213 10.4852C4.31656 10.6805 4.63315 10.6805 4.82841 10.4852Z"
+                                    fill="currentColor" />
+                              </svg>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="column-carts w-auto">
+                     <div class="header-column d-flex justify-content-between">
+                        <p class="right-header-column  fw-bold">
+                           مهام القادمة
+                        </p>
+                        <p class="left-header-column fw-semibold p-1 rounded-2">
+                           5 مهام
+                        </p>
+                     </div>
+                     <button type="button" class="btn bg-white border-opacity-25 border-dark shadow-sm w-100">
+                        <i class="fa-solid fa-plus"></i>
+                     </button>
+                     <div class="card cart-column-content bg-white shadow-sm my-3">
+                        <div class="header-cart d-flex justify-content-between pt-3 px-3">
+                           <div>
+                              <p class="fw-bold m-0">اسم المهمة 11-15</p>
+                              <p class=" m-0" style="font-size: .95rem;"> Until 11/30 <b>•</b> Strategy </p>
+                           </div>
+                           <a href="#" class="setting-cart text-black">
+                              <i class="fa-solid fa-ellipsis"></i>
+                           </a>
+                        </div>
+                        <div class="card-body">
+                           Change to updated data for the tables in slides for final review on Thursday.
+                        </div>
+                        <div class="footer-cart d-flex justify-content-between px-3 pb-3">
+                           <div class="right-footer-cart d-flex gap-1">
+                              <img class="rounded-circle" width="28" height="28"
+                                 src="./assate/img/Avatar (Fluent 2).png" alt="">
+                              <img class="rounded-circle" width="28" height="28"
+                                 src="./assate/img/Avatar (Fluent 2).png" alt="">
+                           </div>
+                           <div class="left-footer-cart text-black-50">1
+                              <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                 <path
+                                    d="M4.82841 10.4852L10.4853 4.82839C11.6568 3.65681 13.5563 3.65681 14.7279 4.82839C15.8995 5.99996 15.8995 7.89945 14.7279 9.07103L8.01039 15.7885C7.4246 16.3743 6.47485 16.3743 5.88907 15.7885C5.30328 15.2028 5.30328 14.253 5.88907 13.6672L11.8995 7.65681C12.0947 7.46155 12.0947 7.14497 11.8995 6.94971C11.7042 6.75444 11.3876 6.75444 11.1924 6.94971L5.18196 12.9601C4.20565 13.9364 4.20565 15.5193 5.18196 16.4956C6.15827 17.472 7.74118 17.472 8.71749 16.4956L15.435 9.77813C16.9971 8.21604 16.9971 5.68338 15.435 4.12128C13.8729 2.55918 11.3403 2.55918 9.77815 4.12128L4.1213 9.77813C3.92604 9.9734 3.92604 10.29 4.1213 10.4852C4.31656 10.6805 4.63315 10.6805 4.82841 10.4852Z"
+                                    fill="currentColor" />
+                              </svg>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="card cart-column-content bg-white shadow-sm my-3">
+                        <div class="header-cart d-flex justify-content-between pt-3 px-3">
+                           <div>
+                              <p class="fw-bold m-0">اسم المهمة 11-15</p>
+                              <p class=" m-0" style="font-size: .95rem;"> Until 11/30 <b>•</b> Strategy </p>
+                           </div>
+                           <a href="#" class="setting-cart text-black">
+                              <i class="fa-solid fa-ellipsis"></i>
+                           </a>
+                        </div>
+                        <div class="card-body">
+                           Change to updated data for the tables in slides for final review on Thursday.
+                        </div>
+                        <div class="footer-cart d-flex justify-content-between px-3 pb-3">
+                           <div class="right-footer-cart d-flex gap-1">
+                              <img class="rounded-circle" width="28" height="28"
+                                 src="./assate/img/Avatar (Fluent 2).png" alt="">
+                              <img class="rounded-circle" width="28" height="28"
+                                 src="./assate/img/Avatar (Fluent 2).png" alt="">
+                           </div>
+                           <div class="left-footer-cart text-black-50">1
+                              <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                 <path
+                                    d="M4.82841 10.4852L10.4853 4.82839C11.6568 3.65681 13.5563 3.65681 14.7279 4.82839C15.8995 5.99996 15.8995 7.89945 14.7279 9.07103L8.01039 15.7885C7.4246 16.3743 6.47485 16.3743 5.88907 15.7885C5.30328 15.2028 5.30328 14.253 5.88907 13.6672L11.8995 7.65681C12.0947 7.46155 12.0947 7.14497 11.8995 6.94971C11.7042 6.75444 11.3876 6.75444 11.1924 6.94971L5.18196 12.9601C4.20565 13.9364 4.20565 15.5193 5.18196 16.4956C6.15827 17.472 7.74118 17.472 8.71749 16.4956L15.435 9.77813C16.9971 8.21604 16.9971 5.68338 15.435 4.12128C13.8729 2.55918 11.3403 2.55918 9.77815 4.12128L4.1213 9.77813C3.92604 9.9734 3.92604 10.29 4.1213 10.4852C4.31656 10.6805 4.63315 10.6805 4.82841 10.4852Z"
+                                    fill="currentColor" />
+                              </svg>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="column-carts w-auto">
+                     <div class="header-column d-flex justify-content-between">
+                        <p class="right-header-column  fw-bold">
+                           مهام القادمة
+                        </p>
+                        <p class="left-header-column fw-semibold p-1 rounded-2">
+                           5 مهام
+                        </p>
+                     </div>
+                     <button type="button" class="btn bg-white border-opacity-25 border-dark shadow-sm w-100">
+                        <i class="fa-solid fa-plus"></i>
+                     </button>
+                     <div class="card cart-column-content bg-white shadow-sm my-3">
+                        <div class="header-cart d-flex justify-content-between pt-3 px-3">
+                           <div>
+                              <p class="fw-bold m-0">اسم المهمة 11-15</p>
+                              <p class=" m-0" style="font-size: .95rem;"> Until 11/30 <b>•</b> Strategy </p>
+                           </div>
+                           <a href="#" class="setting-cart text-black">
+                              <i class="fa-solid fa-ellipsis"></i>
+                           </a>
+                        </div>
+                        <div class="card-body">
+                           Change to updated data for the tables in slides for final review on Thursday.
+                        </div>
+                        <div class="footer-cart d-flex justify-content-between px-3 pb-3">
+                           <div class="right-footer-cart d-flex gap-1">
+                              <img class="rounded-circle" width="28" height="28"
+                                 src="./assate/img/Avatar (Fluent 2).png" alt="">
+                              <img class="rounded-circle" width="28" height="28"
+                                 src="./assate/img/Avatar (Fluent 2).png" alt="">
+                           </div>
+                           <div class="left-footer-cart text-black-50">1
+                              <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                 <path
+                                    d="M4.82841 10.4852L10.4853 4.82839C11.6568 3.65681 13.5563 3.65681 14.7279 4.82839C15.8995 5.99996 15.8995 7.89945 14.7279 9.07103L8.01039 15.7885C7.4246 16.3743 6.47485 16.3743 5.88907 15.7885C5.30328 15.2028 5.30328 14.253 5.88907 13.6672L11.8995 7.65681C12.0947 7.46155 12.0947 7.14497 11.8995 6.94971C11.7042 6.75444 11.3876 6.75444 11.1924 6.94971L5.18196 12.9601C4.20565 13.9364 4.20565 15.5193 5.18196 16.4956C6.15827 17.472 7.74118 17.472 8.71749 16.4956L15.435 9.77813C16.9971 8.21604 16.9971 5.68338 15.435 4.12128C13.8729 2.55918 11.3403 2.55918 9.77815 4.12128L4.1213 9.77813C3.92604 9.9734 3.92604 10.29 4.1213 10.4852C4.31656 10.6805 4.63315 10.6805 4.82841 10.4852Z"
+                                    fill="currentColor" />
+                              </svg>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="card cart-column-content bg-white shadow-sm my-3">
+                        <div class="header-cart d-flex justify-content-between pt-3 px-3">
+                           <div>
+                              <p class="fw-bold m-0">اسم المهمة 11-15</p>
+                              <p class=" m-0" style="font-size: .95rem;"> Until 11/30 <b>•</b> Strategy </p>
+                           </div>
+                           <a href="#" class="setting-cart text-black">
+                              <i class="fa-solid fa-ellipsis"></i>
+                           </a>
+                        </div>
+                        <div class="card-body">
+                           Change to updated data for the tables in slides for final review on Thursday.
+                        </div>
+                        <div class="footer-cart d-flex justify-content-between px-3 pb-3">
+                           <div class="right-footer-cart d-flex gap-1">
+                              <img class="rounded-circle" width="28" height="28"
+                                 src="./assate/img/Avatar (Fluent 2).png" alt="">
+                              <img class="rounded-circle" width="28" height="28"
+                                 src="./assate/img/Avatar (Fluent 2).png" alt="">
+                           </div>
+                           <div class="left-footer-cart text-black-50">1
+                              <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                 <path
+                                    d="M4.82841 10.4852L10.4853 4.82839C11.6568 3.65681 13.5563 3.65681 14.7279 4.82839C15.8995 5.99996 15.8995 7.89945 14.7279 9.07103L8.01039 15.7885C7.4246 16.3743 6.47485 16.3743 5.88907 15.7885C5.30328 15.2028 5.30328 14.253 5.88907 13.6672L11.8995 7.65681C12.0947 7.46155 12.0947 7.14497 11.8995 6.94971C11.7042 6.75444 11.3876 6.75444 11.1924 6.94971L5.18196 12.9601C4.20565 13.9364 4.20565 15.5193 5.18196 16.4956C6.15827 17.472 7.74118 17.472 8.71749 16.4956L15.435 9.77813C16.9971 8.21604 16.9971 5.68338 15.435 4.12128C13.8729 2.55918 11.3403 2.55918 9.77815 4.12128L4.1213 9.77813C3.92604 9.9734 3.92604 10.29 4.1213 10.4852C4.31656 10.6805 4.63315 10.6805 4.82841 10.4852Z"
+                                    fill="currentColor" />
+                              </svg>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="card cart-column-content bg-white shadow-sm my-3">
+                        <div class="header-cart d-flex justify-content-between pt-3 px-3">
+                           <div>
+                              <p class="fw-bold m-0">اسم المهمة 11-15</p>
+                              <p class=" m-0" style="font-size: .95rem;"> Until 11/30 <b>•</b> Strategy </p>
+                           </div>
+                           <a href="#" class="setting-cart text-black">
+                              <i class="fa-solid fa-ellipsis"></i>
+                           </a>
+                        </div>
+                        <div class="card-body">
+                           Change to updated data for the tables in slides for final review on Thursday.
+                        </div>
+                        <div class="footer-cart d-flex justify-content-between px-3 pb-3">
+                           <div class="right-footer-cart d-flex gap-1">
+                              <img class="rounded-circle" width="28" height="28"
+                                 src="./assate/img/Avatar (Fluent 2).png" alt="">
+                              <img class="rounded-circle" width="28" height="28"
+                                 src="./assate/img/Avatar (Fluent 2).png" alt="">
+                           </div>
+                           <div class="left-footer-cart text-black-50">1
+                              <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                 <path
+                                    d="M4.82841 10.4852L10.4853 4.82839C11.6568 3.65681 13.5563 3.65681 14.7279 4.82839C15.8995 5.99996 15.8995 7.89945 14.7279 9.07103L8.01039 15.7885C7.4246 16.3743 6.47485 16.3743 5.88907 15.7885C5.30328 15.2028 5.30328 14.253 5.88907 13.6672L11.8995 7.65681C12.0947 7.46155 12.0947 7.14497 11.8995 6.94971C11.7042 6.75444 11.3876 6.75444 11.1924 6.94971L5.18196 12.9601C4.20565 13.9364 4.20565 15.5193 5.18196 16.4956C6.15827 17.472 7.74118 17.472 8.71749 16.4956L15.435 9.77813C16.9971 8.21604 16.9971 5.68338 15.435 4.12128C13.8729 2.55918 11.3403 2.55918 9.77815 4.12128L4.1213 9.77813C3.92604 9.9734 3.92604 10.29 4.1213 10.4852C4.31656 10.6805 4.63315 10.6805 4.82841 10.4852Z"
+                                    fill="currentColor" />
+                              </svg>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="card cart-column-content bg-white shadow-sm my-3">
+                        <div class="header-cart d-flex justify-content-between pt-3 px-3">
+                           <div>
+                              <p class="fw-bold m-0">اسم المهمة 11-15</p>
+                              <p class=" m-0" style="font-size: .95rem;"> Until 11/30 <b>•</b> Strategy </p>
+                           </div>
+                           <a href="#" class="setting-cart text-black">
+                              <i class="fa-solid fa-ellipsis"></i>
+                           </a>
+                        </div>
+                        <div class="card-body">
+                           Change to updated data for the tables in slides for final review on Thursday.
+                        </div>
+                        <div class="footer-cart d-flex justify-content-between px-3 pb-3">
+                           <div class="right-footer-cart d-flex gap-1">
+                              <img class="rounded-circle" width="28" height="28"
+                                 src="./assate/img/Avatar (Fluent 2).png" alt="">
+                              <img class="rounded-circle" width="28" height="28"
+                                 src="./assate/img/Avatar (Fluent 2).png" alt="">
+                           </div>
+                           <div class="left-footer-cart text-black-50">1
+                              <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                 <path
+                                    d="M4.82841 10.4852L10.4853 4.82839C11.6568 3.65681 13.5563 3.65681 14.7279 4.82839C15.8995 5.99996 15.8995 7.89945 14.7279 9.07103L8.01039 15.7885C7.4246 16.3743 6.47485 16.3743 5.88907 15.7885C5.30328 15.2028 5.30328 14.253 5.88907 13.6672L11.8995 7.65681C12.0947 7.46155 12.0947 7.14497 11.8995 6.94971C11.7042 6.75444 11.3876 6.75444 11.1924 6.94971L5.18196 12.9601C4.20565 13.9364 4.20565 15.5193 5.18196 16.4956C6.15827 17.472 7.74118 17.472 8.71749 16.4956L15.435 9.77813C16.9971 8.21604 16.9971 5.68338 15.435 4.12128C13.8729 2.55918 11.3403 2.55918 9.77815 4.12128L4.1213 9.77813C3.92604 9.9734 3.92604 10.29 4.1213 10.4852C4.31656 10.6805 4.63315 10.6805 4.82841 10.4852Z"
+                                    fill="currentColor" />
+                              </svg>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="column-carts w-auto">
+                     <div class="header-column d-flex justify-content-between">
+                        <p class="right-header-column  fw-bold">
+                           مهام القادمة
+                        </p>
+                        <p class="left-header-column fw-semibold p-1 rounded-2">
+                           5 مهام
+                        </p>
+                     </div>
+                     <button type="button" class="btn bg-white border-opacity-25 border-dark shadow-sm w-100">
+                        <i class="fa-solid fa-plus"></i>
+                     </button>
+                     <div class="card cart-column-content bg-white shadow-sm my-3">
+                        <div class="header-cart d-flex justify-content-between pt-3 px-3">
+                           <div>
+                              <p class="fw-bold m-0">اسم المهمة 11-15</p>
+                              <p class=" m-0" style="font-size: .95rem;"> Until 11/30 <b>•</b> Strategy </p>
+                           </div>
+                           <a href="#" class="setting-cart text-black">
+                              <i class="fa-solid fa-ellipsis"></i>
+                           </a>
+                        </div>
+                        <div class="card-body">
+                           Change to updated data for the tables in slides for final review on Thursday.
+                        </div>
+                        <div class="footer-cart d-flex justify-content-between px-3 pb-3">
+                           <div class="right-footer-cart d-flex gap-1">
+                              <img class="rounded-circle" width="28" height="28"
+                                 src="./assate/img/Avatar (Fluent 2).png" alt="">
+                              <img class="rounded-circle" width="28" height="28"
+                                 src="./assate/img/Avatar (Fluent 2).png" alt="">
+                           </div>
+                           <div class="left-footer-cart text-black-50">1
+                              <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                 <path
+                                    d="M4.82841 10.4852L10.4853 4.82839C11.6568 3.65681 13.5563 3.65681 14.7279 4.82839C15.8995 5.99996 15.8995 7.89945 14.7279 9.07103L8.01039 15.7885C7.4246 16.3743 6.47485 16.3743 5.88907 15.7885C5.30328 15.2028 5.30328 14.253 5.88907 13.6672L11.8995 7.65681C12.0947 7.46155 12.0947 7.14497 11.8995 6.94971C11.7042 6.75444 11.3876 6.75444 11.1924 6.94971L5.18196 12.9601C4.20565 13.9364 4.20565 15.5193 5.18196 16.4956C6.15827 17.472 7.74118 17.472 8.71749 16.4956L15.435 9.77813C16.9971 8.21604 16.9971 5.68338 15.435 4.12128C13.8729 2.55918 11.3403 2.55918 9.77815 4.12128L4.1213 9.77813C3.92604 9.9734 3.92604 10.29 4.1213 10.4852C4.31656 10.6805 4.63315 10.6805 4.82841 10.4852Z"
+                                    fill="currentColor" />
+                              </svg>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="card cart-column-content bg-white shadow-sm my-3">
+                        <div class="header-cart d-flex justify-content-between pt-3 px-3">
+                           <div>
+                              <p class="fw-bold m-0">اسم المهمة 11-15</p>
+                              <p class=" m-0" style="font-size: .95rem;"> Until 11/30 <b>•</b> Strategy </p>
+                           </div>
+                           <a href="#" class="setting-cart text-black">
+                              <i class="fa-solid fa-ellipsis"></i>
+                           </a>
+                        </div>
+                        <div class="card-body">
+                           Change to updated data for the tables in slides for final review on Thursday.
+                        </div>
+                        <div class="footer-cart d-flex justify-content-between px-3 pb-3">
+                           <div class="right-footer-cart d-flex gap-1">
+                              <img class="rounded-circle" width="28" height="28"
+                                 src="./assate/img/Avatar (Fluent 2).png" alt="">
+                              <img class="rounded-circle" width="28" height="28"
+                                 src="./assate/img/Avatar (Fluent 2).png" alt="">
+                           </div>
+                           <div class="left-footer-cart text-black-50">1
+                              <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                 <path
+                                    d="M4.82841 10.4852L10.4853 4.82839C11.6568 3.65681 13.5563 3.65681 14.7279 4.82839C15.8995 5.99996 15.8995 7.89945 14.7279 9.07103L8.01039 15.7885C7.4246 16.3743 6.47485 16.3743 5.88907 15.7885C5.30328 15.2028 5.30328 14.253 5.88907 13.6672L11.8995 7.65681C12.0947 7.46155 12.0947 7.14497 11.8995 6.94971C11.7042 6.75444 11.3876 6.75444 11.1924 6.94971L5.18196 12.9601C4.20565 13.9364 4.20565 15.5193 5.18196 16.4956C6.15827 17.472 7.74118 17.472 8.71749 16.4956L15.435 9.77813C16.9971 8.21604 16.9971 5.68338 15.435 4.12128C13.8729 2.55918 11.3403 2.55918 9.77815 4.12128L4.1213 9.77813C3.92604 9.9734 3.92604 10.29 4.1213 10.4852C4.31656 10.6805 4.63315 10.6805 4.82841 10.4852Z"
+                                    fill="currentColor" />
+                              </svg>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+   integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+<script src="./assate/js/script.js"></script>
+
+</html>
