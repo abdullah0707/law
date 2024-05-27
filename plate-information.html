@@ -1,0 +1,594 @@
+<!doctype html>
+<html dir="rtl">
+
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>Law demo</title>
+   <!-- style css -->
+   <link rel="stylesheet" href="./assate/css/style.css">
+
+   <!-- Bootstrap -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+   <!-- font awesome - icons -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+   <!-- Font Google - EN -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet">
+
+   <!-- Font Google - AR -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap"
+      rel="stylesheet">
+
+</head>
+
+<body>
+   <nav class="navbar fixed-top background-danger">
+      <div class="container-fluid justify-content-between align-items-center">
+         <a class="navbar-brand mx-2" href="#">
+            <img src="./assate/img/Isolation_Mode_navbar.svg" alt="Logo" width="33" height="52">
+         </a>
+         <div class="contact">
+            <a class="navbar-brand text-white" href="#" style="font-size: large;">
+               <i class="fa-solid fa-gear"></i>
+            </a>
+            <a class="navbar-brand text-white" href="#" style="font-size: large;">
+               <i class="fa-solid fa-bell"></i>
+            </a>
+            <a class="navbar-brand rounded-circle" href="#" style="font-size: large;">
+               <img src="./assate/img/Avatar.svg" alt="avatar" width="24" height="24">
+            </a>
+         </div>
+      </div>
+   </nav>
+   <div class="container-fluid" style="height: 100vh;">
+      <div class="row h-100">
+         <div class="col-xl-2 col-lg-3 col-sm-1 bg-white shadow h-100 icon-dashboard overflow-hidden">
+            <div class="list-group border-0">
+               <a href="#" class="list-group-item list-group-item-action border-0 py-1 ps-0 pe-md-2">
+                  <p class="d-flex justify-content-start item-action-dashboard m-0 " style="padding: 0.8em 0.3em;">
+                     <svg class="mx-2" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                           d="M2.5 12C2.5 7.52166 2.5 5.28249 3.89124 3.89124C5.28249 2.5 7.52166 2.5 12 2.5C16.4783 2.5 18.7175 2.5 20.1088 3.89124C21.5 5.28249 21.5 7.52166 21.5 12C21.5 16.4783 21.5 18.7175 20.1088 20.1088C18.7175 21.5 16.4783 21.5 12 21.5C7.52166 21.5 5.28249 21.5 3.89124 20.1088C2.5 18.7175 2.5 16.4783 2.5 12Z"
+                           stroke="currentColor" stroke-width="1.5" />
+                        <path d="M2.5 9H21.5" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+                        <path d="M6.99981 6H7.00879" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                           stroke-linejoin="round" />
+                        <path d="M10.9998 6H11.0088" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                           stroke-linejoin="round" />
+                        <path d="M17 17C17 14.2386 14.7614 12 12 12C9.23858 12 7 14.2386 7 17" stroke="currentColor"
+                           stroke-width="1.5" stroke-linecap="round" />
+                        <path d="M12.707 15.293L11.2928 16.7072" stroke="currentColor" stroke-width="1.5"
+                           stroke-linecap="round" stroke-linejoin="round" />
+                     </svg>
+                     <span class="d-none d-lg-flex" style="font-size: 90%;">
+                        لوحة المعلومات
+                     </span>
+                  </p>
+               </a>
+               <a href="#" class="list-group-item list-group-item-action border-0 py-1 ps-0 pe-md-2">
+                  <p class="d-flex justify-content-start item-action-dashboard m-0 active-dashboard-text"
+                     style="padding: 0.8em 0.3em;">
+                     <svg class="mx-2" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 2V4M6 2V4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                           stroke-linejoin="round" />
+                        <path d="M11.9955 13H12.0045M11.9955 17H12.0045M15.991 13H16M8 13H8.00897M8 17H8.00897"
+                           stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M3.5 8H20.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                           stroke-linejoin="round" />
+                        <path
+                           d="M2.5 12.2432C2.5 7.88594 2.5 5.70728 3.75212 4.35364C5.00424 3 7.01949 3 11.05 3H12.95C16.9805 3 18.9958 3 20.2479 4.35364C21.5 5.70728 21.5 7.88594 21.5 12.2432V12.7568C21.5 17.1141 21.5 19.2927 20.2479 20.6464C18.9958 22 16.9805 22 12.95 22H11.05C7.01949 22 5.00424 22 3.75212 20.6464C2.5 19.2927 2.5 17.1141 2.5 12.7568V12.2432Z"
+                           stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M3 8H21" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                           stroke-linejoin="round" />
+                     </svg>
+                     <span class="d-none d-lg-flex" style="font-size: 90%;">
+                        إدارة جدول المواعيد
+                     </span>
+                  </p>
+               </a>
+               <a href="#" class="list-group-item list-group-item-action border-0 py-1 ps-0 pe-md-2">
+                  <p class="d-flex justify-content-start item-action-dashboard m-0" style="padding: 0.8em 0.3em;">
+                     <svg class="mx-2" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                           d="M4 17.9808V9.70753C4 6.07416 4 4.25748 5.17157 3.12874C6.34315 2 8.22876 2 12 2C15.7712 2 17.6569 2 18.8284 3.12874C20 4.25748 20 6.07416 20 9.70753V17.9808C20 20.2867 20 21.4396 19.2272 21.8523C17.7305 22.6514 14.9232 19.9852 13.59 19.1824C12.8168 18.7168 12.4302 18.484 12 18.484C11.5698 18.484 11.1832 18.7168 10.41 19.1824C9.0768 19.9852 6.26947 22.6514 4.77285 21.8523C4 21.4396 4 20.2867 4 17.9808Z"
+                           stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M4 7H20" stroke="currentColor" stroke-width="1.5" />
+                     </svg>
+                     <span class="d-none d-lg-flex" style="font-size: 90%;">
+                        إدارة المهام
+                     </span>
+
+                  </p>
+               </a>
+               <a href="#" class="list-group-item list-group-item-action border-0 py-1 ps-0 pe-md-2">
+                  <p class="d-flex justify-content-start item-action-dashboard m-0" style="padding: 0.8em 0.3em;">
+                     <svg class="mx-2" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                           d="M2 19.5C2 18.3215 2 17.7322 2.43934 17.3661C2.87868 17 3.58579 17 5 17C6.41421 17 7.12132 17 7.56066 17.3661C8 17.7322 8 18.3215 8 19.5C8 20.6785 8 21.2678 7.56066 21.6339C7.12132 22 6.41421 22 5 22C3.58579 22 2.87868 22 2.43934 21.6339C2 21.2678 2 20.6785 2 19.5Z"
+                           stroke="currentColor" stroke-width="1.5" />
+                        <path
+                           d="M16 19.5C16 18.3215 16 17.7322 16.4393 17.3661C16.8787 17 17.5858 17 19 17C20.4142 17 21.1213 17 21.5607 17.3661C22 17.7322 22 18.3215 22 19.5C22 20.6785 22 21.2678 21.5607 21.6339C21.1213 22 20.4142 22 19 22C17.5858 22 16.8787 22 16.4393 21.6339C16 21.2678 16 20.6785 16 19.5Z"
+                           stroke="currentColor" stroke-width="1.5" />
+                        <path d="M19 17C19 13.6907 18.2562 13 14.6923 13H9.30769C5.74379 13 5 13.6907 5 17"
+                           stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                           d="M12 10H12.5625C14.1425 10 14.9325 10 15.5 9.62549C15.7457 9.46336 15.9566 9.25502 16.1208 9.01238C16.5 8.45188 16.5 7.67163 16.5 6.11111C16.5 5.1748 16.5 4.70665 16.2725 4.37035C16.174 4.22476 16.0474 4.09976 15.9 4.00249C15.5595 3.77778 15.0855 3.77778 14.1375 3.77778H12.6425C12.5126 3.77778 12.4476 3.77778 12.3879 3.76912C12.1645 3.73672 11.9647 3.61544 11.8358 3.43402C11.8014 3.38555 11.7726 3.32861 11.715 3.21472C11.4788 2.74826 11.263 2.27872 10.7397 2.08489C10.5105 2 10.2486 2 9.72492 2C8.90751 2 8.4988 2 8.19213 2.16903C7.97352 2.28952 7.79314 2.46767 7.67114 2.68358C7.5 2.98647 7.5 3.39013 7.5 4.19745V5.55556C7.5 7.65069 7.5 8.69825 8.15901 9.34913C8.81802 10 9.87868 10 12 10Z"
+                           stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                     </svg>
+                     <span class="d-none d-lg-flex" style="font-size: 90%;">
+                        إدارة الملفات
+                     </span>
+                  </p>
+               </a>
+               <a href="#" class="list-group-item list-group-item-action border-0 py-1 ps-0 pe-md-2">
+                  <p class="d-flex justify-content-start item-action-dashboard m-0" style="padding: 0.8em 0.3em;">
+                     <svg class="mx-2" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                           d="M7.50304 4C7.48421 3.62851 7.55185 3.34156 7.73579 3.1C8.19267 2.5 9.12335 2.5 10.9847 2.5H13.0153C14.8766 2.5 15.8073 2.5 16.2642 3.1C16.4481 3.34156 16.5158 3.62851 16.497 4"
+                           stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                           d="M5 8C5.03784 7.74037 5.12478 7.51593 5.26968 7.31431C5.85493 6.5 7.0681 6.5 9.49444 6.5H14.5056C16.9319 6.5 18.1451 6.5 18.7303 7.31431C18.8752 7.51593 18.9622 7.74037 19 8"
+                           stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                           d="M3.81753 15.7128L4.53641 18.016C5.43193 20.8852 6.19729 21.5 9.21027 21.5H14.7897C17.8027 21.5 18.5681 20.8852 19.4636 18.016L20.1825 15.7128C20.9261 13.3303 21.2979 12.139 20.7101 11.3195C20.1223 10.5 18.896 10.5 16.4434 10.5H7.55662C5.104 10.5 3.8777 10.5 3.28988 11.3195C2.70207 12.139 3.07389 13.3303 3.81753 15.7128Z"
+                           stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                     </svg>
+                     <span class="d-none d-lg-flex" style="font-size: 90%;">
+                        إدارة الأرشيف
+                     </span>
+                  </p>
+               </a>
+               <a href="#" class="list-group-item list-group-item-action border-0 py-1 ps-0 pe-md-2">
+                  <p class="d-flex justify-content-start item-action-dashboard m-0" style="padding: 0.8em 0.3em;">
+                     <svg class="mx-2" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14 8.99988H18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                        <path d="M14 12.4999H17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                        <rect x="2" y="2.99988" width="20" height="18" rx="5" stroke="currentColor" stroke-width="1.5"
+                           stroke-linejoin="round" />
+                        <path d="M5 15.9999C6.20831 13.4188 10.7122 13.249 12 15.9999" stroke="currentColor"
+                           stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                           d="M10.5 8.99988C10.5 10.1044 9.60457 10.9999 8.5 10.9999C7.39543 10.9999 6.5 10.1044 6.5 8.99988C6.5 7.89531 7.39543 6.99988 8.5 6.99988C9.60457 6.99988 10.5 7.89531 10.5 8.99988Z"
+                           stroke="currentColor" stroke-width="1.5" />
+                     </svg>
+                     <span class="d-none d-lg-flex" style="font-size: 90%;">
+                        قائمة العملاء
+                     </span>
+
+                  </p>
+               </a>
+               <a href="#" class="list-group-item list-group-item-action border-0 py-1 ps-0 pe-md-2">
+                  <p class="d-flex justify-content-start item-action-dashboard m-0" style="padding: 0.8em 0.3em;">
+                     <svg class="mx-2" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                           d="M6.57757 15.4816C5.1628 16.324 1.45336 18.0441 3.71266 20.1966C4.81631 21.248 6.04549 22 7.59087 22H16.4091C17.9545 22 19.1837 21.248 20.2873 20.1966C22.5466 18.0441 18.8372 16.324 17.4224 15.4816C14.1048 13.5061 9.89519 13.5061 6.57757 15.4816Z"
+                           stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                           d="M16.5 6.5C16.5 8.98528 14.4853 11 12 11C9.51472 11 7.5 8.98528 7.5 6.5C7.5 4.01472 9.51472 2 12 2C14.4853 2 16.5 4.01472 16.5 6.5Z"
+                           stroke="currentColor" stroke-width="1.5" />
+                     </svg>
+                     <span class="d-none d-lg-flex" style="font-size: 90%;">
+                        المستخدمين
+                     </span>
+
+                  </p>
+               </a>
+               <a href="#" class="list-group-item list-group-item-action border-0 py-1 ps-0 pe-md-2">
+                  <p class="d-flex justify-content-start item-action-dashboard m-0" style="padding: 0.8em 0.3em;">
+                     <svg class="mx-2" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                           d="M15.5 12C15.5 13.933 13.933 15.5 12 15.5C10.067 15.5 8.5 13.933 8.5 12C8.5 10.067 10.067 8.5 12 8.5C13.933 8.5 15.5 10.067 15.5 12Z"
+                           stroke="currentColor" stroke-width="1.5" />
+                        <path
+                           d="M21.011 14.0965C21.5329 13.9558 21.7939 13.8854 21.8969 13.7508C22 13.6163 22 13.3998 22 12.9669V11.0332C22 10.6003 22 10.3838 21.8969 10.2493C21.7938 10.1147 21.5329 10.0443 21.011 9.90358C19.0606 9.37759 17.8399 7.33851 18.3433 5.40087C18.4817 4.86799 18.5509 4.60156 18.4848 4.44529C18.4187 4.28902 18.2291 4.18134 17.8497 3.96596L16.125 2.98673C15.7528 2.77539 15.5667 2.66972 15.3997 2.69222C15.2326 2.71472 15.0442 2.90273 14.6672 3.27873C13.208 4.73448 10.7936 4.73442 9.33434 3.27864C8.95743 2.90263 8.76898 2.71463 8.60193 2.69212C8.43489 2.66962 8.24877 2.77529 7.87653 2.98663L6.15184 3.96587C5.77253 4.18123 5.58287 4.28891 5.51678 4.44515C5.45068 4.6014 5.51987 4.86787 5.65825 5.4008C6.16137 7.3385 4.93972 9.37763 2.98902 9.9036C2.46712 10.0443 2.20617 10.1147 2.10308 10.2492C2 10.3838 2 10.6003 2 11.0332V12.9669C2 13.3998 2 13.6163 2.10308 13.7508C2.20615 13.8854 2.46711 13.9558 2.98902 14.0965C4.9394 14.6225 6.16008 16.6616 5.65672 18.5992C5.51829 19.1321 5.44907 19.3985 5.51516 19.5548C5.58126 19.7111 5.77092 19.8188 6.15025 20.0341L7.87495 21.0134C8.24721 21.2247 8.43334 21.3304 8.6004 21.3079C8.76746 21.2854 8.95588 21.0973 9.33271 20.7213C10.7927 19.2644 13.2088 19.2643 14.6689 20.7212C15.0457 21.0973 15.2341 21.2853 15.4012 21.3078C15.5682 21.3303 15.7544 21.2246 16.1266 21.0133L17.8513 20.034C18.2307 19.8187 18.4204 19.711 18.4864 19.5547C18.5525 19.3984 18.4833 19.132 18.3448 18.5991C17.8412 16.6616 19.0609 14.6226 21.011 14.0965Z"
+                           stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                     </svg>
+                     <span class="d-none d-lg-flex" style="font-size: 90%;">
+                        الإعدادات
+                     </span>
+                  </p>
+               </a>
+               <!-- Start Calender -->
+               <div id="calender" dir="ltr">
+                  <div class="nav justify-content-center justify-content-lg-between">
+                     <a id="prev" class="d-none d-lg-flex">
+                        <i class="fa-solid fa-chevron-left"></i>
+                     </a>
+                     <p class="m-0 d-flex align-items-center flex-lg-row flex-column">
+                        <span id="year" class="d-none d-lg-flex px-2"></span>
+                        <span id="month" class="d-none d-lg-flex"></span>
+                        <span id="todayName" class="d-lg-none d-flex"></span>
+                        <span id="todayNumber" class="d-lg-none d-flex"></span>
+                     </p>
+                     <a id="next" class="d-none d-lg-flex">
+                        <i class="fa-solid fa-chevron-right"></i>
+                     </a>
+                  </div>
+                  <div class="d-lg-block d-none w-100">
+                     <table id="cal"></table>
+                  </div>
+               </div>
+               <!-- End Calender -->
+            </div>
+         </div>
+         <div class="col-xl-10 col-lg-9 col-sm-11 px-2 px-md-4 overflow-auto icon-dashboard" style="height: 100vh;">
+            <div class="container-fluid">
+               <div class="row">
+                  <div class="col-xl-4 col-lg-6 col-md-4 col-sm-6 px-1 pb-3 pt-1 px-md-3">
+                     <div class="card bg-white border-0">
+                        <div class="card-body p-2 p-md-3 d-flex justify-content-between align-items-center">
+                           <div class="fw-semibold" style="font-size: 65%;">
+                              الأعمال المفتوحة
+                              <p class="m-0">5</p>
+                           </div>
+                           <img src="./assate/img/arrow-up-left-01-round.svg" alt="">
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-xl-4 col-lg-6 col-md-4 col-sm-6 px-1 pb-3 pt-1 px-md-3">
+                     <div class="card bg-white border-0">
+                        <div class="card-body p-2 p-md-3 d-flex justify-content-between align-items-center">
+                           <div class="fw-semibold" style="font-size: 65%;">
+                              ملفات العملاء
+                              <p class="m-0">5</p>
+                           </div>
+                           <img src="./assate/img/arrow-up-left-01-round.svg" alt="">
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-xl-4 col-lg-6 col-md-4 col-sm-6 px-1 pb-3 pt-1 px-md-3">
+                     <div class="card bg-white border-0">
+                        <div class="card-body p-2 p-md-3 d-flex justify-content-between align-items-center">
+                           <div class="fw-semibold" style="font-size: 65%;">
+                              العملاء
+                              <p class="m-0">20</p>
+                           </div>
+                           <img src="./assate/img/arrow-up-left-01-round.svg" alt="">
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-xl-4 col-lg-6 col-md-4 col-sm-6 px-1 pb-3 pt-1 px-md-3">
+                     <div class="card bg-white border-0">
+                        <div class="card-body p-2 p-md-3 d-flex justify-content-between align-items-center">
+                           <div class="fw-semibold" style="font-size: 65%;">
+                              المهام المتأخرة
+                              <p class="m-0">5</p>
+                           </div>
+                           <img src="./assate/img/arrow-up-left-01-round.svg" alt="">
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-xl-4 col-lg-6 col-md-4 col-sm-6 px-1 pb-3 pt-1 px-md-3">
+                     <div class="card bg-white border-0">
+                        <div class="card-body p-2 p-md-3 d-flex justify-content-between align-items-center">
+                           <div class="fw-semibold" style="font-size: 65%;">
+                              المهام الحالية
+                              <p class="m-0">5</p>
+                           </div>
+                           <img src="./assate/img/arrow-up-left-01-round.svg" alt="">
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-xl-4 col-lg-6 col-md-4 col-sm-6 px-1 pb-3 pt-1 px-md-3">
+                     <div class="card bg-white border-0">
+                        <div class="card-body p-2 p-md-3 d-flex justify-content-between align-items-center">
+                           <div class="fw-semibold" style="font-size: 65%;">
+                              تقارير العملاء
+                              <p class="m-0">24</p>
+                           </div>
+                           <img src="./assate/img/arrow-up-left-01-round.svg" alt="">
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-12 px-1 px-md-3">
+                     <ul class="tabs bg-white d-flex justify-content-end text-end w-100 position-relative flex-wrap-reverse p-2 rounded-3 shadow-sm"
+                        role="tablist">
+                        <div class="select-form-tabs d-flex w-100 flex-column flex-md-row pt-2" dir="rtl">
+                           <form class="form-floating col-xl-4 col-md-5 col-sm-12 ms-md-3 ms-0 my-2">
+                              <input
+                                 class="form-control pb-1 shadow-none border-secondary border-opacity-25 rounded-3 ps-5"
+                                 type="date" id="birthday" name="birthday" class="form-control" id="floatingInputValue"
+                                 style="font-size: 97% !important;" value="">
+                              <label for="floatingInputValue"
+                                 class="d-flex justify-content-between py-0 ps-0 pt-2 opacity-100"
+                                 style="color: #616161;font-size: 90% !important;">
+                                 التاريخ
+                                 <span class="arrow my-auto mx-2 opacity-100" style="margin:
+                                 .8rem .8rem 0 !important;">
+                                    <img src="./assate/img/arrow-down.svg" alt="" srcset="">
+                                 </span>
+                              </label>
+                           </form>
+                           <div class="custom-select col-xl-4 col-md-5 col-sm-12 mx-md-3 mx-0 my-2"
+                              style="font-size: 90%;">
+                              <button class="select-button border-opacity-25 border-secondary rounded-3" role="combobox"
+                                 aria-labelledby="select button" aria-haspopup="listbox" aria-expanded="false"
+                                 aria-controls="select-dropdown">
+                                 <div class="d-flex flex-column text-end">
+                                    <span style="color: #616161; font-size: 90% ;">المستخدم</span>
+                                    <span class="selected-value">الكل</span>
+                                 </div>
+                                 <span class="arrow my-auto">
+                                    <img src="./assate/img/arrow-down.svg" alt="" srcset="">
+                                 </span>
+                              </button>
+                              <ul class="select-dropdown" role="listbox" id="select-dropdown">
+                                 <li role="option">
+                                    <input type="radio" id="github" name="social-account" />
+                                    <label for="github"><i class="bx bxl-github"></i>GitHub</label>
+                                 </li>
+                                 <li role="option">
+                                    <input type="radio" id="instagram" name="social-account" />
+                                    <label for="instagram"><i class="bx bxl-instagram"></i>Instagram</label>
+                                 </li>
+                                 <li role="option">
+                                    <input type="radio" id="facebook" name="social-account" />
+                                    <label for="facebook"><i class="bx bxl-facebook-circle"></i>Facebook</label>
+                                 </li>
+                                 <li role="option">
+                                    <input type="radio" id="linkedIn" name="social-account" />
+                                    <label for="linkedIn"><i class="bx bxl-linkedin-square"></i>LinkedIn</label>
+                                 </li>
+                                 <li role="option">
+                                    <input type="radio" id="twitter" name="social-account" />
+                                    <label for="twitter"><i class="bx bxl-twitter"></i>Twitter</label>
+                                 </li>
+                                 <li role="option">
+                                    <input type="radio" id="reddit" name="social-account" />
+                                    <label for="reddit"><i class="bx bxl-reddit"></i>Reddit</label>
+                                 </li>
+                              </ul>
+                           </div>
+                        </div>
+                        <div
+                           class="w-100 d-flex justify-content-end border-bottom flex-column-reverse flex-md-row-reverse"
+                           dir="rtl">
+                           <li class="pe-0 pe-lg-5">
+                              <input type="radio" name="tabs" id="tab1" checked />
+                              <label for="tab1" role="tab" aria-selected="true" aria-controls="panel1" tabindex="0"
+                                 style="font-size: 90%;">
+                                 <svg class="mx-2" width="24" height="25" viewBox="0 0 24 25" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                       d="M11.5 1.00195C5.69997 1.00195 1 5.71117 1 11.5225C1 17.3338 5.69997 22.043 11.5 22.043C11.75 22.043 11.995 22.033 12.24 22.013C11.4296 20.8457 10.9968 19.4571 11 18.0352C11.0004 16.1752 11.738 14.3914 13.0506 13.0762C14.3633 11.7609 16.1436 11.0219 18 11.0216C19.4191 11.0183 20.805 11.452 21.97 12.264C21.99 12.0185 22 11.773 22 11.5225C22 5.71117 17.3001 1.00195 11.5 1.00195ZM12.5 11.5225C12.5 11.7882 12.3947 12.0431 12.2071 12.231C12.0196 12.4189 11.7652 12.5245 11.5 12.5245H7C6.73597 12.5227 6.48336 12.4163 6.2973 12.2286C6.11124 12.0409 6.00682 11.7871 6.00682 11.5225C6.00682 11.258 6.11124 11.0042 6.2973 10.8164C6.48336 10.6287 6.73597 10.5224 7 10.5206H10.5V5.00981C10.4991 4.87766 10.5243 4.74662 10.5742 4.62427C10.624 4.50191 10.6975 4.39064 10.7905 4.29687C10.8834 4.2031 10.994 4.12868 11.1157 4.07789C11.2375 4.02711 11.3681 4.00096 11.5 4.00096C11.6319 4.00096 11.7625 4.02711 11.8843 4.07789C12.0061 4.12868 12.1166 4.2031 12.2096 4.29687C12.3025 4.39064 12.376 4.50191 12.4259 4.62427C12.4757 4.74662 12.5009 4.87766 12.5 5.00981V11.5225Z"
+                                       fill="currentColor" />
+                                    <path
+                                       d="M18 13.0255C17.0111 13.0255 16.0444 13.3193 15.2222 13.8698C14.3999 14.4202 13.759 15.2027 13.3806 16.1181C13.0022 17.0335 12.9031 18.0408 13.0961 19.0126C13.289 19.9844 13.7652 20.8771 14.4645 21.5777C15.1637 22.2783 16.0547 22.7555 17.0246 22.9488C17.9945 23.1421 18.9998 23.0429 19.9134 22.6637C20.8271 22.2845 21.608 21.6424 22.1574 20.8185C22.7068 19.9947 23 19.0261 23 18.0353C23 17.3774 22.8707 16.7259 22.6194 16.1181C22.3682 15.5103 21.9999 14.958 21.5356 14.4928C21.0713 14.0276 20.5201 13.6586 19.9134 13.4068C19.3068 13.155 18.6566 13.0254 18 13.0255ZM18 21.5421C17.8022 21.5421 17.6089 21.4834 17.4444 21.3733C17.28 21.2632 17.1518 21.1067 17.0761 20.9236C17.0004 20.7405 16.9806 20.539 17.0191 20.3447C17.0577 20.1503 17.153 19.9718 17.2928 19.8316C17.4327 19.6915 17.6109 19.5961 17.8049 19.5574C17.9988 19.5187 18.1999 19.5386 18.3827 19.6144C18.5654 19.6902 18.7216 19.8187 18.8315 19.9834C18.9414 20.1482 19 20.342 19 20.5401C19 20.8059 18.8946 21.0607 18.7071 21.2486C18.5196 21.4365 18.2652 21.5421 18 21.5421ZM19 18.0353C19 18.301 18.8946 18.5558 18.7071 18.7437C18.5196 18.9316 18.2652 19.0372 18 19.0372C17.7348 19.0372 17.4805 18.9316 17.2929 18.7437C17.1054 18.5558 17 18.301 17 18.0353V15.5304C17 15.2646 17.1054 15.0098 17.2929 14.8219C17.4805 14.634 17.7348 14.5284 18 14.5284C18.2652 14.5284 18.5196 14.634 18.7071 14.8219C18.8946 15.0098 19 15.2646 19 15.5304V18.0353Z"
+                                       fill="currentColor" />
+                                 </svg>
+                                 المهام المتأخرة
+
+                              </label>
+                              <div id="tab-content1" class="tab-content pt-3 bg-white" role="tabpanel"
+                                 aria-labelledby="description" aria-hidden="false">
+                                 <table class="table table-hover" style="font-size: 90%;" dir="rtl">
+                                    <thead class="opacity-50">
+                                       <tr>
+                                          <td class="py-3">اسم المهمه</td>
+                                          <td class="py-3">نوع المهمة</td>
+                                          <td class="py-3">تاريخ المهمة</td>
+                                          <td class="py-3">تاريخ نهاية المهمة</td>
+                                          <td class="py-3">مسندالي</td>
+                                       </tr>
+                                    </thead>
+                                    <tbody>
+                                       <tr>
+                                          <td class="py-3">اسم المهمه</td>
+                                          <td class="py-3">نوع المهمة</td>
+                                          <td class="py-3">01/05/2024</td>
+                                          <td class="py-3">10/08/2024</td>
+                                          <td class="py-3">
+                                             <img src="./assate/img/Subtract.svg" alt="" srcset="">
+                                             Da-eun Gim
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td class="py-3">اسم المهمه</td>
+                                          <td class="py-3">نوع المهمة</td>
+                                          <td class="py-3">01/05/2024</td>
+                                          <td class="py-3">10/08/2024</td>
+                                          <td class="py-3">
+                                             <img src="./assate/img/Subtract.svg" alt="" srcset="">
+                                             Da-eun Gim
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td>اسم المهمه</td>
+                                          <td class="py-3">نوع المهمة</td>
+                                          <td class="py-3">01/05/2024</td>
+                                          <td class="py-3">10/08/2024</td>
+                                          <td class="py-3">
+                                             <img src="./assate/img/Subtract.svg" alt="" srcset="">
+                                             Da-eun Gim
+                                          </td>
+                                       </tr>
+                                    </tbody>
+                                 </table>
+                              </div>
+                           </li>
+                           <li class="pe-0 pe-lg-5">
+                              <input type="radio" name="tabs" id="tab2" checked />
+                              <label for="tab2" role="tab" aria-selected="true" aria-controls="panel1" tabindex="0"
+                                 style="font-size: 90%;">
+                                 <svg class="mx-2" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_270_9699)">
+                                       <path
+                                          d="M20.4853 3.51473C18.2188 1.24823 15.2053 0 12 0C8.79469 0 5.78119 1.24823 3.51469 3.51473C1.24819 5.78123 0 8.79469 0 12C0 15.2053 1.24819 18.2188 3.51469 20.4853C5.78119 22.7517 8.79469 24 12 24C15.2053 24 18.2188 22.7518 20.4853 20.4853C22.7518 18.2188 24 15.2053 24 12C24 8.79469 22.7518 5.78119 20.4853 3.51473ZM12 21.6446C6.68189 21.6446 2.35538 17.3181 2.35538 12C2.35538 11.9913 2.35566 11.9827 2.3557 11.974C2.3557 11.9718 2.35538 11.9697 2.35538 11.9675C2.35538 11.9638 2.35584 11.9602 2.35594 11.9566C2.37933 6.70223 6.62559 2.42738 11.8689 2.35706C11.8799 2.35655 11.8908 2.35542 11.9019 2.35542C11.9085 2.35542 11.915 2.35622 11.9216 2.35641C11.9478 2.35622 11.9738 2.35542 12 2.35542C17.3182 2.35542 21.6447 6.68198 21.6447 12C21.6447 17.3181 17.3181 21.6446 12 21.6446Z"
+                                          fill="currentColor" />
+                                       <path
+                                          d="M19.326 12.5794C18.9339 12.5794 18.6159 12.2615 18.6159 11.8693C18.6159 11.4771 18.9339 11.1592 19.326 11.1592H20.1819C19.7799 7.21817 16.5837 4.09175 12.612 3.79822V4.5433C12.612 4.93545 12.2941 5.25336 11.9019 5.25336C11.5097 5.25336 11.1918 4.93545 11.1918 4.5433V3.81519C7.2789 4.19862 4.16204 7.33559 3.8094 11.2573H4.5759C4.96806 11.2573 5.28596 11.5752 5.28596 11.9674C5.28596 12.3596 4.96806 12.6775 4.5759 12.6775H3.80359C4.13007 16.6624 7.30942 19.8515 11.29 20.1935V19.2934C11.29 18.9012 11.6079 18.5833 12.0001 18.5833C12.3922 18.5833 12.7101 18.9012 12.7101 19.2934V20.1935C16.7233 19.8486 19.922 16.6099 20.2039 12.5794H19.326ZM14.8744 10.1298L12.5022 12.5021C12.369 12.6352 12.1884 12.71 12.0001 12.71C11.8118 12.71 11.6312 12.6352 11.498 12.5021L7.36867 8.3727C7.09135 8.09544 7.09135 7.64586 7.36867 7.36855C7.64593 7.09123 8.09551 7.09123 8.37282 7.36855L12.0002 10.9958L13.8704 9.12561C14.1476 8.8483 14.5972 8.8483 14.8745 9.12561C15.1517 9.40287 15.1517 9.8525 14.8744 10.1298Z"
+                                          fill="currentColor" />
+                                    </g>
+                                    <defs>
+                                       <clipPath id="clip0_270_9699">
+                                          <rect width="24" height="24" fill="white" />
+                                       </clipPath>
+                                    </defs>
+                                 </svg>
+                                 جدول المواعيد
+
+                              </label>
+                              <div id="tab-content1" class="tab-content pt-3 bg-white" role="tabpanel"
+                                 aria-labelledby="description" aria-hidden="false">
+                                 <table class="table table-hover" style="font-size: 90%;" dir="rtl">
+                                    <thead class="opacity-50">
+                                       <tr>
+                                          <td class="py-3">اسم الموعد</td>
+                                          <td class="py-3">نوع الموعد</td>
+                                          <td class="py-3">تاريخ الموعد</td>
+                                          <td class="py-3">مسندالي</td>
+                                       </tr>
+                                    </thead>
+                                    <tbody>
+                                       <tr>
+                                          <td class="py-3">اسم الموعد</td>
+                                          <td class="py-3">نوع الموعد</td>
+                                          <td class="py-3">01/05/2024</td>
+                                          <td class="py-3">
+                                             <img src="./assate/img/Subtract.svg" alt="" srcset="">
+                                             Da-eun Gim
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td class="py-3">اسم الموعد</td>
+                                          <td class="py-3">نوع الموعد</td>
+                                          <td class="py-3">01/05/2024</td>
+                                          <td class="py-3">
+                                             <img src="./assate/img/Subtract.svg" alt="" srcset="">
+                                             Da-eun Gim
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td class="py-3">اسم الموعد</td>
+                                          <td class="py-3">نوع الموعد</td>
+                                          <td class="py-3">01/05/2024</td>
+                                          <td class="py-3">
+                                             <img src="./assate/img/Subtract.svg" alt="" srcset="">
+                                             Da-eun Gim
+                                          </td>
+                                       </tr>
+                                    </tbody>
+                                 </table>
+                              </div>
+                           </li>
+                           <li>
+                              <input type="radio" name="tabs" id="tab3" checked />
+                              <label for="tab3" role="tab" aria-selected="true" aria-controls="panel1" tabindex="0"
+                                 style="font-size: 90%;">
+                                 <svg class="mx-2" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_270_9687)">
+                                       <path
+                                          d="M17.6719 11.3438C14.1824 11.3438 11.3438 14.1824 11.3438 17.6719C11.3438 21.1613 14.1824 24 17.6719 24C21.1613 24 24 21.1613 24 17.6719C24 14.1824 21.1613 11.3438 17.6719 11.3438ZM20.4844 18.375H17.6719C17.2833 18.375 16.9688 18.0604 16.9688 17.6719V14.8594C16.9688 14.4708 17.2833 14.1562 17.6719 14.1562C18.0604 14.1562 18.375 14.4708 18.375 14.8594V16.9688H20.4844C20.8729 16.9688 21.1875 17.2833 21.1875 17.6719C21.1875 18.0604 20.8729 18.375 20.4844 18.375Z"
+                                          fill="currentColor" />
+                                       <path
+                                          d="M22.5469 2.15625C22.5469 1.76239 22.2376 1.45312 21.8438 1.45312H18.3281V3.5625C18.3281 3.95618 18.0189 4.26562 17.625 4.26562C17.2311 4.26562 16.9219 3.95618 16.9219 3.5625V1.45312H14.1094V3.5625C14.1094 3.95618 13.8001 4.26562 13.4062 4.26562C13.0124 4.26562 12.7031 3.95618 12.7031 3.5625V1.45312H9.89062V3.5625C9.89062 3.95618 9.58136 4.26562 9.1875 4.26562C8.79364 4.26562 8.48438 3.95618 8.48438 3.5625V1.45312H5.67188V3.5625C5.67188 3.95618 5.36261 4.26562 4.96875 4.26562C4.57489 4.26562 4.26562 3.95618 4.26562 3.5625V1.45312H0.703125C0.309265 1.45312 0 1.76239 0 2.15625V5.67188H22.5469V2.15625Z"
+                                          fill="currentColor" />
+                                       <path
+                                          d="M10.5938 14.1094H10.7626C11.0193 13.6106 11.309 13.1318 11.6635 12.7031H10.5938C10.2052 12.7031 9.89062 12.3885 9.89062 12C9.89062 11.6115 10.2052 11.2969 10.5938 11.2969H12C12.288 11.2969 12.5339 11.4706 12.6427 11.7184C13.9898 10.5804 15.7275 9.89062 17.625 9.89062H16.2188C15.8302 9.89062 15.5156 9.57605 15.5156 9.1875C15.5156 8.79895 15.8302 8.48438 16.2188 8.48438H17.625C18.0135 8.48438 18.3281 8.79895 18.3281 9.1875C18.3281 9.57605 18.0135 9.89062 17.625 9.89062C19.4932 9.89062 21.2087 10.5568 22.5469 11.6635V7.07812H0V20.4375C0 20.826 0.314575 21.1406 0.703125 21.1406H10.7444C10.2026 20.0845 9.89062 18.8914 9.89062 17.625C9.89062 16.851 10.0294 16.1135 10.242 15.408C10.0356 15.2855 9.89062 15.0701 9.89062 14.8125C9.89062 14.424 10.2052 14.1094 10.5938 14.1094ZM10.5938 8.48438H12C12.3885 8.48438 12.7031 8.79895 12.7031 9.1875C12.7031 9.57605 12.3885 9.89062 12 9.89062H10.5938C10.2052 9.89062 9.89062 9.57605 9.89062 9.1875C9.89062 8.79895 10.2052 8.48438 10.5938 8.48438ZM6.375 18.3281H4.96875C4.5802 18.3281 4.26562 18.0135 4.26562 17.625C4.26562 17.2365 4.5802 16.9219 4.96875 16.9219H6.375C6.76355 16.9219 7.07812 17.2365 7.07812 17.625C7.07812 18.0135 6.76355 18.3281 6.375 18.3281ZM6.375 15.5156H4.96875C4.5802 15.5156 4.26562 15.201 4.26562 14.8125C4.26562 14.424 4.5802 14.1094 4.96875 14.1094H6.375C6.76355 14.1094 7.07812 14.424 7.07812 14.8125C7.07812 15.201 6.76355 15.5156 6.375 15.5156ZM6.375 12.7031H4.96875C4.5802 12.7031 4.26562 12.3885 4.26562 12C4.26562 11.6115 4.5802 11.2969 4.96875 11.2969H6.375C6.76355 11.2969 7.07812 11.6115 7.07812 12C7.07812 12.3885 6.76355 12.7031 6.375 12.7031ZM6.375 9.89062H4.96875C4.5802 9.89062 4.26562 9.57605 4.26562 9.1875C4.26562 8.79895 4.5802 8.48438 4.96875 8.48438H6.375C6.76355 8.48438 7.07812 8.79895 7.07812 9.1875C7.07812 9.57605 6.76355 9.89062 6.375 9.89062Z"
+                                          fill="currentColor" />
+                                       <path
+                                          d="M5.67188 0.703125C5.67188 0.309265 5.36261 0 4.96875 0C4.57489 0 4.26562 0.309265 4.26562 0.703125V1.45312H5.67188V0.703125Z"
+                                          fill="currentColor" />
+                                       <path
+                                          d="M9.89062 0.703125C9.89062 0.309265 9.58136 0 9.1875 0C8.79364 0 8.48438 0.309265 8.48438 0.703125V1.45312H9.89062V0.703125Z"
+                                          fill="currentColor" />
+                                       <path
+                                          d="M14.1094 0.703125C14.1094 0.309265 13.8001 0 13.4062 0C13.0124 0 12.7031 0.309265 12.7031 0.703125V1.45312H14.1094V0.703125Z"
+                                          fill="currentColor" />
+                                       <path
+                                          d="M18.3281 0.703125C18.3281 0.309265 18.0189 0 17.625 0C17.2311 0 16.9219 0.309265 16.9219 0.703125V1.45312H18.3281V0.703125Z"
+                                          fill="currentColor" />
+                                    </g>
+                                    <defs>
+                                       <clipPath id="clip0_270_9687">
+                                          <rect width="24" height="24" fill="white" />
+                                       </clipPath>
+                                    </defs>
+                                 </svg>
+                                 جدول المهام
+
+                              </label>
+                              <div id="tab-content1" class="tab-content pt-3 bg-white" role="tabpanel"
+                                 aria-labelledby="description" aria-hidden="false">
+
+                                 <table class="table table-hover" style="font-size: 90%;" dir="rtl">
+                                    <thead class="opacity-50">
+                                       <tr>
+                                          <td class="py-3">اسم المهمه</td>
+                                          <td class="py-3">نوع المهمة</td>
+                                          <td class="py-3">تاريخ المهمة</td>
+                                          <td class="py-3">تاريخ نهاية المهمة</td>
+                                          <td class="py-3">مسندالي</td>
+                                       </tr>
+                                    </thead>
+                                    <tbody>
+                                       <tr>
+                                          <td class="py-3">اسم المهمه</td>
+                                          <td class="py-3">نوع المهمة</td>
+                                          <td class="py-3">تاريخ المهمة</td>
+                                          <td class="py-3">تاريخ نهاية المهمة</td>
+                                          <td class="py-3">
+                                             <img src="./assate/img/Subtract.svg" alt="" srcset="">
+                                             Da-eun Gim
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td class="py-3">اسم المهمه</td>
+                                          <td class="py-3">نوع المهمة</td>
+                                          <td class="py-3">تاريخ المهمة</td>
+                                          <td class="py-3">تاريخ نهاية المهمة</td>
+                                          <td class="py-3">
+                                             <img src="./assate/img/Subtract.svg" alt="" srcset="">
+                                             Da-eun Gim
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td class="py-3">اسم المهمه</td>
+                                          <td class="py-3">نوع المهمة</td>
+                                          <td class="py-3">تاريخ المهمة</td>
+                                          <td class="py-3">تاريخ نهاية المهمة</td>
+                                          <td class="py-3">
+                                             <img src="./assate/img/Subtract.svg" alt="" srcset="">
+                                             Da-eun Gim
+                                          </td>
+                                       </tr>
+                                    </tbody>
+                                 </table>
+                              </div>
+                           </li>
+                        </div>
+                     </ul>
+                  </div>
+
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+   integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+<script src="./assate/js/script.js"></script>
+
+</html>
