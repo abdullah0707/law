@@ -158,7 +158,7 @@ body {
 /* Start Main Dashboard */
 .list-group-item-action {
   background-color: #fff !important;
-  color: #fff !important;
+  color: #6c757d !important;
 }
 .list-group-item-action:active {
   background-color: #fff !important;
@@ -166,7 +166,7 @@ body {
 }
 .list-group-item-action:hover {
   background-color: #fff !important;
-  color: #fff !important;
+  color: #8e1416 !important;
 }
 .list-group-item-action:active .item-action-dashboard {
   border-top-right-radius: 2em;
