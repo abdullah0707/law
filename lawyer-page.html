@@ -300,11 +300,97 @@
                               <p class="m-0 fw-semibold text-end">
                                  قائمة المستشارين
                               </p>
+                              <!-- Button trigger modal -->
                               <button type="button"
-                                 class="btn background-danger d-flex align-items-center gap-2 text-white">
+                                 class="btn background-danger d-flex align-items-center gap-2 text-white"
+                                 data-bs-toggle="modal" data-bs-target="#exampleModal">
                                  <i class="fa fa-plus" aria-hidden="true"></i>
                                  إضافة مستشار جديد
                               </button>
+
+                              <!-- Modal -->
+                              <div class="modal fade" id="exampleModal" tabindex="-1"
+                                 aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                 <div class="modal-dialog">
+                                    <div class="modal-content">
+                                       <div class="modal-header border-0">
+                                          <h1 class="modal-title fs-5" id="exampleModalLabel">
+                                             مستخدم جديد
+                                          </h1>
+                                          <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                             aria-label="Close"></button>
+                                       </div>
+                                       <div class="modal-body fs-6">
+                                          <form class="row g-3 needs-validation" novalidate>
+                                             <div class="col-12">
+                                                <label for="validationCustom01" class="form-label py-0 px-1 fs-6">First
+                                                   name</label>
+                                                <input type="text" class="form-control" id="validationCustom01"
+                                                   value="Mark" required>
+                                                <div class="valid-feedback">
+                                                   Looks good!
+                                                </div>
+                                             </div>
+                                             <div class="col-12">
+                                                <label for="validationCustom02" class="form-label py-0 px-1 fs-6">Last
+                                                   name</label>
+                                                <input type="text" class="form-control" id="validationCustom02"
+                                                   value="Otto" required>
+                                                <div class="valid-feedback">
+                                                   Looks good!
+                                                </div>
+                                             </div>
+                                             <div class="col-12">
+                                                <label for="validationCustomUsername"
+                                                   class="form-label py-0 px-1 fs-6">Username</label>
+                                                <div class="input-group has-validation">
+                                                   <span class="input-group-text" id="inputGroupPrepend">@</span>
+                                                   <input type="text" class="form-control" id="validationCustomUsername"
+                                                      aria-describedby="inputGroupPrepend" required>
+                                                   <div class="invalid-feedback">
+                                                      Please choose a username.
+                                                   </div>
+                                                </div>
+                                             </div>
+                                             <div class="col-12">
+                                                <label for="validationCustom03"
+                                                   class="form-label py-0 px-1 fs-6">City</label>
+                                                <input type="text" class="form-control" id="validationCustom03"
+                                                   required>
+                                                <div class="invalid-feedback">
+                                                   Please provide a valid city.
+                                                </div>
+                                             </div>
+                                             <div class="col-12">
+                                                <label for="validationCustom04"
+                                                   class="form-label py-0 px-1 fs-6">State</label>
+                                                <select class="form-select" id="validationCustom04" required>
+                                                   <option selected disabled value="">Choose...</option>
+                                                   <option>...</option>
+                                                </select>
+                                                <div class="invalid-feedback">
+                                                   Please select a valid state.
+                                                </div>
+                                             </div>
+                                             <div class="col-12">
+                                                <label for="validationCustom05"
+                                                   class="form-label py-0 px-1 fs-6">Zip</label>
+                                                <input type="text" class="form-control" id="validationCustom05"
+                                                   required>
+                                                <div class="invalid-feedback">
+                                                   Please provide a valid zip.
+                                                </div>
+                                             </div>
+                                          </form>
+                                       </div>
+                                       <div class="modal-footer border-0">
+                                          <button type="button" class="btn background-danger text-white">حفظ</button>
+                                          <button type="button" class="btn bg-white border border-1 border-dark border-opacity-50"
+                                             data-bs-dismiss="modal">الغاء</button>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
                            </div>
                            <div
                               class="w-100 d-flex justify-content-end border-bottom flex-column-reverse flex-md-row-reverse">
