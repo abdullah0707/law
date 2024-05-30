@@ -155,13 +155,13 @@ body {
 /* End Form LogIn */
 
 /* Start Primary Color */
-.btn-danger {
+.btn-primary {
   background-color: #8e1416 !important;
 }
-.background-danger {
+.bg-primary {
   background-color: #8e1416 !important;
 }
-.color-danger {
+.color-primary {
   color: #8e1416 !important;
 }
 /* End Primary Color */
