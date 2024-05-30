@@ -102,9 +102,9 @@
          </a>
       </div>
    </div>
-   <div class="container-fluid" style="height: 100vh;">
-      <div class="row h-100">
-         <div class="col-sm-1 bg-white shadow h-100 p-0 pt-3 overflow-hidden">
+   <div class="container-fluid">
+      <div class="row">
+         <div class="col-sm-1 bg-white shadow p-0 pt-3 overflow-hidden">
             <div class="list-group border-0">
                <a href="#" class="list-group-item list-group-item-action border-0 py-1 ps-0 pe-2 pe-md-2 pe-lg-3">
                   <p class="d-flex justify-content-center item-action-dashboard m-0 " style="padding: 0.8em 0.3em;">
@@ -259,24 +259,24 @@
                   </p>
                </a>
                <!-- Start Calender -->
-               <div id="calender" dir="ltr">
-                  <div class="nav justify-content-center ">
-                     <a id="prev" class="d-none">
-                        <i class="fa-solid fa-chevron-left"></i>
-                     </a>
-                     <p class="m-0 d-flex align-items-center flex-column">
-                        <span id="year" class="d-none px-2"></span>
-                        <span id="month" class="d-none"></span>
-                        <span id="todayName" class="d-flex"></span>
-                        <span id="todayNumber" class="d-flex"></span>
-                     </p>
-                     <a id="next" class="d-none">
+               <div id="calender">
+                  <div class="nav justify-content-center justify-content-lg-between flex-row-reverse">
+                     <a id="next" class="d-none d-lg-flex">
                         <i class="fa-solid fa-chevron-right"></i>
                      </a>
+                     <p class="m-0 d-flex align-items-center flex-lg-row flex-column">
+                        <span id="year" class="d-none d-lg-flex px-2"></span>
+                        <span id="month" class="d-none d-lg-flex"></span>
+                        <span id="todayName" class="d-lg-none d-flex"></span>
+                        <span id="todayNumber" class="d-lg-none d-flex"></span>
+                     </p>
+                     <a id="prev" class="d-none d-lg-flex">
+                        <i class="fa-solid fa-chevron-left"></i>
+                     </a>
                   </div>
-                  <!-- <div class="d-lg-block d-none w-100">
+                  <div class="d-lg-block d-none w-100">
                      <table id="cal"></table>
-                  </div> -->
+                  </div>
                </div>
                <!-- End Calender -->
             </div>

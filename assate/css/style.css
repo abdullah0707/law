@@ -197,7 +197,7 @@ body {
 
 /* Start Calender */
 #calender {
-  padding: 0.37em;
+  padding: .9em 0.37em;
   background: #ffffff;
 }
 #calender .nav {
@@ -237,7 +237,7 @@ a {
   top: 0;
   display: none;
 }
-.tabs label {
+.tabs .tab-label {
   display: block;
   padding: 0.7rem 0.7rem 1rem 1.5rem;
   border-radius: 2px 2px 0 0;
@@ -251,7 +251,7 @@ a {
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
-.tabs label:hover {
+.tabs .tab-label:hover {
   border-bottom-color: #8e1416 !important;
   border-bottom: 1px solid;
 }

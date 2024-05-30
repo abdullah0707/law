@@ -51,9 +51,9 @@
       </div>
    </nav>
 
-   <div class="container-fluid" style="height: 91vh;">
-      <div class="row h-100">
-         <div class="col-xl-2 col-lg-3 col-sm-1 bg-white shadow h-100 overflow-hidden pt-3 px-0">
+   <div class="container-fluid">
+      <div class="row">
+         <div class="col-xl-2 col-lg-3 col-sm-1 bg-white shadow overflow-hidden pt-3 px-0">
             <div class="list-group border-0">
                <a href="#" class="list-group-item list-group-item-action border-0 py-1 ps-0 pe-lg-4 pe-md-2">
                   <p class="d-flex justify-content-start item-action-dashboard m-0 " style="padding: 0.8em 0.3em;">
@@ -208,7 +208,7 @@
                   </p>
                </a>
                <!-- Start Calender -->
-               <div id="calender" dir="ltr">
+               <div id="calender">
                   <div class="nav justify-content-center justify-content-lg-between">
                      <a id="prev" class="d-none d-lg-flex">
                         <i class="fa-solid fa-chevron-left"></i>
@@ -364,8 +364,8 @@
                            dir="rtl">
                            <li class="pe-0 pe-lg-5">
                               <input type="radio" name="tabs" id="tab1" checked />
-                              <label for="tab1" role="tab" aria-selected="true" aria-controls="panel1" tabindex="0"
-                                 style="font-size: 90%;">
+                              <label class="tab-label" for="tab1" role="tab" aria-selected="true" aria-controls="panel1"
+                                 tabindex="0" style="font-size: 90%;">
                                  <svg class="mx-2" width="24" height="25" viewBox="0 0 24 25" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -427,8 +427,8 @@
                            </li>
                            <li class="pe-0 pe-lg-5">
                               <input type="radio" name="tabs" id="tab2" checked />
-                              <label for="tab2" role="tab" aria-selected="true" aria-controls="panel1" tabindex="0"
-                                 style="font-size: 90%;">
+                              <label class="tab-label" for="tab2" role="tab" aria-selected="true" aria-controls="panel1"
+                                 tabindex="0" style="font-size: 90%;">
                                  <svg class="mx-2" width="24" height="24" viewBox="0 0 24 24" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <g clip-path="url(#clip0_270_9699)">
@@ -493,8 +493,8 @@
                            </li>
                            <li>
                               <input type="radio" name="tabs" id="tab3" checked />
-                              <label for="tab3" role="tab" aria-selected="true" aria-controls="panel1" tabindex="0"
-                                 style="font-size: 90%;">
+                              <label class="tab-label" for="tab3" role="tab" aria-selected="true" aria-controls="panel1"
+                                 tabindex="0" style="font-size: 90%;">
                                  <svg class="mx-2" width="24" height="24" viewBox="0 0 24 24" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <g clip-path="url(#clip0_270_9687)">
@@ -527,7 +527,6 @@
                                     </defs>
                                  </svg>
                                  جدول المهام
-
                               </label>
                               <div id="tab-content1" class="tab-content pt-3 bg-white" role="tabpanel"
                                  aria-labelledby="description" aria-hidden="false">
