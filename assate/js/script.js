@@ -61,7 +61,7 @@ function calender(month, year) {
     // DAYS OF WEEK HEADER
     html += '<tr>';
     for (var i = 0; i < weekDays.length; i++) {
-        html += '<td class="py-0" style="font-size: xx-small;">' + weekDays[i] + '</td>';
+        html += '<td class="py-0 ps-1" style="font-size: xx-small;">' + weekDays[i] + '</td>';
     }
     html += '</tr>';
 
