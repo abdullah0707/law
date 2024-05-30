@@ -1,13 +1,16 @@
 html[dir="ltr"] {
   --is-dorder-rtl: 2em 0em 0em 2em;
   --is-padding-rtl: 0 0 0 1em;
+  --is-ltr-rotateZ: rotateZ(90deg);
 }
 html[dir="rtl"] {
   --is-ltr: rotateY(180deg);
   --is-dorder-rtl: 0em 2em 2em 0em;
   --is-padding-rtl: 0 1em 0 0;
 }
-
+.img-rotateZ{
+  transform: var(--is-ltr-rotateZ);
+}
 * {
   font-family: "Tajawal", "Font Awesome 6 Pro", sans-serif;
 }
@@ -197,7 +200,7 @@ body {
 
 /* Start Calender */
 #calender {
-  padding: .9em 0.37em;
+  padding: 0.9em 0.37em;
   background: #ffffff;
 }
 #calender .nav {
@@ -239,7 +242,6 @@ a {
 }
 .tabs .tab-label {
   display: block;
-  padding: 0.7rem 0.7rem 1rem 1.5rem;
   border-radius: 2px 2px 0 0;
   font-size: 20px;
   font-weight: normal;
@@ -409,9 +411,10 @@ input[type="date" i]::-webkit-calendar-picker-indicator {
   opacity: 0 !important;
 }
 
-input::-webkit-datetime-edit {
-  text-align: end !important;
-}
+/* input::-webkit-datetime-edit {
+  text-align: start !important;
+  width: 100%;
+} */
 
 .left-header-column {
   background: var(--Brand-Background-2-Rest, rgba(235, 243, 252, 1));
