@@ -288,281 +288,73 @@
          <div class="col-xl-10 col-lg-9 col-sm-11 pt-3 px-2 px-md-4 overflow-auto" style="height: 91vh;">
             <div class="container-fluid">
                <div class="row ">
-                  <div class="col-12 h-100">
-                     <div class="bg-white shadow-sm rounded-top ">
-                        <!-- <div class="card border-0">
-                        </div> -->
-                        <ul class="tabs d-flex text-start w-100 position-relative flex-wrap-reverse p-2" role="tablist">
-                           <div
-                              class="card-body p-2 p-md-3 d-flex justify-content-between flex-md-row flex-column align-items-center gap-3">
-                              <p class="m-0 fw-semibold text-end">
-                                 قائمة المستشارين
-                              </p>
-                              <!-- Button trigger modal -->
-                              <button type="button" class="btn bg-primary d-flex align-items-center gap-2 text-white"
-                                 data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                 <i class="fa fa-plus" aria-hidden="true"></i>
-                                 إضافة مستشار جديد
-                              </button>
-
-                              <!-- Modal -->
-                              <div class="modal fade" id="exampleModal" tabindex="-1"
-                                 aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                 <div class="modal-dialog">
-                                    <div class="modal-content">
-                                       <div class="modal-header border-0">
-                                          <h1 class="modal-title fs-5" id="exampleModalLabel">
-                                             مستخدم جديد
-                                          </h1>
-                                          <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                             aria-label="Close"></button>
-                                       </div>
-                                       <div class="modal-body fs-6">
-                                          <form class="row g-3 needs-validation" novalidate>
-                                             <div class="col-12">
-                                                <label for="validationCustom01" class="form-label py-0 px-1 fs-6">First
-                                                   name</label>
-                                                <input type="text" class="form-control border-0 bg-light"
-                                                   id="validationCustom01" value="Mark" required>
-                                                <div class="valid-feedback">
-                                                   Looks good!
-                                                </div>
-                                             </div>
-                                             <div class="col-12">
-                                                <label for="validationCustom02" class="form-label py-0 px-1 fs-6">Last
-                                                   name</label>
-                                                <input type="text" class="form-control border-0 bg-light"
-                                                   id="validationCustom02" value="Otto" required>
-                                                <div class="valid-feedback">
-                                                   Looks good!
-                                                </div>
-                                             </div>
-                                             <div class="col-12">
-                                                <label for="validationCustom03"
-                                                   class="form-label py-0 px-1 fs-6">City</label>
-                                                <input type="text" class="form-control border-0 bg-light"
-                                                   id="validationCustom03" required>
-                                                <div class="invalid-feedback">
-                                                   Please provide a valid city.
-                                                </div>
-                                             </div>
-                                             <div class="col-12">
-                                                <label for="validationCustom04"
-                                                   class="form-label py-0 px-1 fs-6">State</label>
-                                                <select class="form-select border-0 bg-light" id="validationCustom04"
-                                                   required>
-                                                   <option selected disabled value="">Choose...</option>
-                                                   <option>...</option>
-                                                </select>
-                                                <div class="invalid-feedback">
-                                                   Please select a valid state.
-                                                </div>
-                                             </div>
-                                             <div class="col-12">
-                                                <label for="validationCustom05"
-                                                   class="form-label py-0 px-1 fs-6">Zip</label>
-                                                <input type="text" class="form-control border-0 bg-light"
-                                                   id="validationCustom05" required>
-                                                <div class="invalid-feedback">
-                                                   Please provide a valid zip.
-                                                </div>
-                                             </div>
-                                          </form>
-                                       </div>
-                                       <div class="modal-footer border-0">
-                                          <button type="button" class="btn bg-primary text-white">حفظ</button>
-                                          <button type="button"
-                                             class="btn bg-white border border-1 border-dark border-opacity-50"
-                                             data-bs-dismiss="modal">الغاء</button>
-                                       </div>
-                                    </div>
-                                 </div>
+                  <div class="col-4 h-100">
+                     <div class="card shadow-sm border-0">
+                        <div class="card-body">
+                           <div class="header-cart d-flex gap-3 align-items-center">
+                              <div class="start">
+                                 <img src="./assate/img/Subtract-archive.svg" alt="">
+                              </div>
+                              <div class="end">
+                                 <p class="m-0 fw-semibold">2024</p>
+                                 <p class="m-0 fw-light" style="font-size: small;">ملف العقود</p>
                               </div>
                            </div>
-                           <div
-                              class="w-100 d-flex justify-content-end border-bottom flex-column-reverse flex-md-row-reverse">
-                              <li>
-                                 <input type="radio" name="tabs" id="tab1" checked />
-                                 <label class="pb-3 pt-2 ps-1 pe-3" for="tab1" role="tab" aria-selected="true"
-                                    aria-controls="panel1" tabindex="0" style="font-size: 90%;">
-                                    مستشارين
-                                 </label>
-                                 <div id="tab-content1"
-                                    class="tab-content top-100 py-3 px-2 bg-white rounded-bottom shadow-sm"
-                                    role="tabpanel" aria-labelledby="description" aria-hidden="false">
-                                    <table class="table table-hover text-start text-start" style="font-size: 80%;">
-                                       <thead class="text-secondary">
-                                          <tr>
-                                             <td class="align-middle py-3 ps-2 pe-0">
-                                                <input class="form-check-input mx-auto" type="checkbox" value=""
-                                                   id="flexCheckDefault">
-                                             </td>
-                                             <td class="align-middle py-3 ps-2 pe-0">اسم المستشار</td>
-                                             <td class="align-middle py-3 ps-2 pe-0"> رقم الهوية</td>
-                                             <td class="align-middle py-3 ps-2 pe-0">المهنة</td>
-                                             <td class="align-middle py-3 ps-2 pe-0">نوع الملف</td>
-                                             <td class="align-middle py-3 ps-2 pe-0">اسناد ملف</td>
-                                             <td class="align-middle py-3 ps-2 pe-0"></td>
-                                          </tr>
-                                       </thead>
-                                       <tbody>
-                                          <tr>
-                                             <td class="align-middle py-3 ps-2 pe-0">
-                                                <input class="form-check-input mx-auto" type="checkbox" value=""
-                                                   id="flexCheckDefault1">
-                                             </td>
-                                             <td class="align-middle py-3 ps-2 pe-0">
-                                                اسم المستخدم
-                                             </td>
-                                             <td class="align-middle py-3 ps-2 pe-0"> رقم الهوية</td>
-                                             <td class="align-middle py-3 ps-2 pe-0">المهنة</td>
-                                             <td class="align-middle py-3 ps-2 pe-0">استشارة تجارية</td>
-                                             <td class="align-middle py-3 ps-2 pe-0">
-                                                <p class="m-0">
-                                                   صلاحية المستخدم
-                                                </p>
-                                             </td>
-                                             <td class="align-middle py-3 ps-2 pe-0">
-                                                <i class="fa-solid fa-ellipsis"></i>
-                                             </td>
-                                          </tr>
-                                          <tr>
-                                             <td class="align-middle py-3 ps-2 pe-0">
-                                                <input class="form-check-input mx-auto" type="checkbox" value=""
-                                                   id="flexCheckDefault2">
-                                             </td>
-                                             <td class="align-middle py-3 ps-2 pe-0">
-                                                اسم المستخدم
-                                             </td>
-                                             <td class="align-middle py-3 ps-2 pe-0"> رقم الهوية</td>
-                                             <td class="align-middle py-3 ps-2 pe-0">المهنة</td>
-                                             <td class="align-middle py-3 ps-2 pe-0">استشارة تجارية</td>
-                                             <td class="align-middle py-3 ps-2 pe-0">
-                                                <p class="m-0">
-                                                   صلاحية المستخدم
-                                                </p>
-                                             </td>
-                                             <td class="align-middle py-3 ps-2 pe-0">
-                                                <i class="fa-solid fa-ellipsis"></i>
-                                             </td>
-                                          </tr>
-                                          <tr>
-                                             <td class="align-middle py-3 ps-2 pe-0">
-                                                <input class="form-check-input mx-auto" type="checkbox" value=""
-                                                   id="flexCheckDefault3">
-                                             </td>
-                                             <td class="align-middle py-3 ps-2 pe-0">
-                                                اسم المستخدم
-                                             </td>
-                                             <td class="align-middle py-3 ps-2 pe-0"> رقم الهوية</td>
-                                             <td class="align-middle py-3 ps-2 pe-0">المهنة</td>
-                                             <td class="align-middle py-3 ps-2 pe-0">استشارة تجارية</td>
-                                             <td class="align-middle py-3 ps-2 pe-0">
-                                                <p class="m-0">
-                                                   صلاحية المستخدم
-                                                </p>
-                                             </td>
-                                             <td class="align-middle py-3 ps-2 pe-0">
-                                                <i class="fa-solid fa-ellipsis"></i>
-                                             </td>
-                                          </tr>
-                                       </tbody>
-                                    </table>
-                                 </div>
-                              </li>
-                              <li>
-                                 <input type="radio" name="tabs" id="tab3" checked />
-                                 <label class="pb-3 pt-2 ps-1 pe-3" for="tab3" role="tab" aria-selected="true"
-                                    aria-controls="panel1" tabindex="0" style="font-size: 90%;">
-                                    مستخدمين
-                                 </label>
-                                 <div id="tab-content1"
-                                    class="tab-content top-100 py-3 px-2 bg-white rounded-bottom shadow-sm"
-                                    role="tabpanel" aria-labelledby="description" aria-hidden="false">
-                                    <table class="table table-hover text-start text-start" style="font-size: 80%;">
-                                       <thead class="text-secondary">
-                                          <tr>
-                                             <td class="align-middle py-3 ps-2 pe-0">
-                                                <input class="form-check-input mx-auto" type="checkbox" value=""
-                                                   id="flexCheckDefault">
-                                             </td>
-                                             <td class="align-middle py-3 ps-2 pe-0">اسم المستشار</td>
-                                             <td class="align-middle py-3 ps-2 pe-0"> رقم الهوية</td>
-                                             <td class="align-middle py-3 ps-2 pe-0">المهنة</td>
-                                             <td class="align-middle py-3 ps-2 pe-0">نوع الملف</td>
-                                             <td class="align-middle py-3 ps-2 pe-0">اسناد ملف</td>
-                                             <td class="align-middle py-3 ps-2 pe-0"></td>
-                                          </tr>
-                                       </thead>
-                                       <tbody>
-                                          <tr>
-                                             <td class="align-middle py-3 ps-2 pe-0">
-                                                <input class="form-check-input mx-auto" type="checkbox" value=""
-                                                   id="flexCheckDefault1">
-                                             </td>
-                                             <td class="align-middle py-3 ps-2 pe-0">
-                                                اسم المستخدم
-                                             </td>
-                                             <td class="align-middle py-3 ps-2 pe-0"> رقم الهوية</td>
-                                             <td class="align-middle py-3 ps-2 pe-0">المهنة</td>
-                                             <td class="align-middle py-3 ps-2 pe-0">استشارة تجارية</td>
-                                             <td class="align-middle py-3 ps-2 pe-0">
-                                                <p class="m-0">
-                                                   صلاحية المستخدم
-                                                </p>
-                                             </td>
-                                             <td class="align-middle py-3 ps-2 pe-0">
-                                                <i class="fa-solid fa-ellipsis"></i>
-                                             </td>
-                                          </tr>
-                                          <tr>
-                                             <td class="align-middle py-3 ps-2 pe-0">
-                                                <input class="form-check-input mx-auto" type="checkbox" value=""
-                                                   id="flexCheckDefault2">
-                                             </td>
-                                             <td class="align-middle py-3 ps-2 pe-0">
-                                                اسم المستخدم
-                                             </td>
-                                             <td class="align-middle py-3 ps-2 pe-0"> رقم الهوية</td>
-                                             <td class="align-middle py-3 ps-2 pe-0">المهنة</td>
-                                             <td class="align-middle py-3 ps-2 pe-0">استشارة تجارية</td>
-                                             <td class="align-middle py-3 ps-2 pe-0">
-                                                <p class="m-0">
-                                                   صلاحية المستخدم
-                                                </p>
-                                             </td>
-                                             <td class="align-middle py-3 ps-2 pe-0">
-                                                <i class="fa-solid fa-ellipsis"></i>
-                                             </td>
-                                          </tr>
-                                          <tr>
-                                             <td class="align-middle py-3 ps-2 pe-0">
-                                                <input class="form-check-input mx-auto" type="checkbox" value=""
-                                                   id="flexCheckDefault3">
-                                             </td>
-                                             <td class="align-middle py-3 ps-2 pe-0">
-                                                اسم المستخدم
-                                             </td>
-                                             <td class="align-middle py-3 ps-2 pe-0"> رقم الهوية</td>
-                                             <td class="align-middle py-3 ps-2 pe-0">المهنة</td>
-                                             <td class="align-middle py-3 ps-2 pe-0">استشارة تجارية</td>
-                                             <td class="align-middle py-3 ps-2 pe-0">
-                                                <p class="m-0">
-                                                   صلاحية المستخدم
-                                                </p>
-                                             </td>
-                                             <td class="align-middle py-3 ps-2 pe-0">
-                                                <i class="fa-solid fa-ellipsis"></i>
-                                             </td>
-                                          </tr>
-                                       </tbody>
-                                    </table>
-                                 </div>
-                              </li>
+                           <div class="footer-cart fw-light">
+                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <path
+                                    d="M17.75 3C19.5449 3 21 4.45507 21 6.25V13.1287C21 13.7254 20.7629 14.2977 20.341 14.7197L14.7197 20.341C14.2977 20.7629 13.7254 21 13.1287 21H6.25C4.45507 21 3 19.5449 3 17.75V6.25C3 4.45507 4.45507 3 6.25 3H17.75ZM17.75 4.5H6.25C5.2835 4.5 4.5 5.2835 4.5 6.25V17.75C4.5 18.7165 5.2835 19.5 6.25 19.5H13V16.25C13 14.517 14.3565 13.1008 16.0656 13.0051L16.25 13H19.5V6.25C19.5 5.2835 18.7165 4.5 17.75 4.5ZM18.439 14.5H16.25C15.3318 14.5 14.5788 15.2071 14.5058 16.1065L14.5 16.25V18.439L18.439 14.5Z"
+                                    fill="#616161" />
+                              </svg>
+                              200 ملف
                            </div>
-                        </ul>
-                        <!-- <div class="overflow-scroll px-3" style="height: 75vh;">
-                        </div> -->
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-4 h-100">
+                     <div class="card shadow-sm border-0">
+                        <div class="card-body">
+                           <div class="header-cart d-flex gap-3 align-items-center">
+                              <div class="start">
+                                 <img src="./assate/img/Subtract-archive.svg" alt="">
+                              </div>
+                              <div class="end">
+                                 <p class="m-0 fw-semibold">2024</p>
+                                 <p class="m-0 fw-light" style="font-size: small;">ملف العقود</p>
+                              </div>
+                           </div>
+                           <div class="footer-cart fw-light">
+                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <path
+                                    d="M17.75 3C19.5449 3 21 4.45507 21 6.25V13.1287C21 13.7254 20.7629 14.2977 20.341 14.7197L14.7197 20.341C14.2977 20.7629 13.7254 21 13.1287 21H6.25C4.45507 21 3 19.5449 3 17.75V6.25C3 4.45507 4.45507 3 6.25 3H17.75ZM17.75 4.5H6.25C5.2835 4.5 4.5 5.2835 4.5 6.25V17.75C4.5 18.7165 5.2835 19.5 6.25 19.5H13V16.25C13 14.517 14.3565 13.1008 16.0656 13.0051L16.25 13H19.5V6.25C19.5 5.2835 18.7165 4.5 17.75 4.5ZM18.439 14.5H16.25C15.3318 14.5 14.5788 15.2071 14.5058 16.1065L14.5 16.25V18.439L18.439 14.5Z"
+                                    fill="#616161" />
+                              </svg>
+                              200 ملف
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-4 h-100">
+                     <div class="card shadow-sm border-0">
+                        <div class="card-body">
+                           <div class="header-cart d-flex gap-3 align-items-center">
+                              <div class="start">
+                                 <img src="./assate/img/Subtract-archive.svg" alt="">
+                              </div>
+                              <div class="end">
+                                 <p class="m-0 fw-semibold">2024</p>
+                                 <p class="m-0 fw-light" style="font-size: small;">ملف العقود</p>
+                              </div>
+                           </div>
+                           <div class="footer-cart fw-light">
+                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <path
+                                    d="M17.75 3C19.5449 3 21 4.45507 21 6.25V13.1287C21 13.7254 20.7629 14.2977 20.341 14.7197L14.7197 20.341C14.2977 20.7629 13.7254 21 13.1287 21H6.25C4.45507 21 3 19.5449 3 17.75V6.25C3 4.45507 4.45507 3 6.25 3H17.75ZM17.75 4.5H6.25C5.2835 4.5 4.5 5.2835 4.5 6.25V17.75C4.5 18.7165 5.2835 19.5 6.25 19.5H13V16.25C13 14.517 14.3565 13.1008 16.0656 13.0051L16.25 13H19.5V6.25C19.5 5.2835 18.7165 4.5 17.75 4.5ZM18.439 14.5H16.25C15.3318 14.5 14.5788 15.2071 14.5058 16.1065L14.5 16.25V18.439L18.439 14.5Z"
+                                    fill="#616161" />
+                              </svg>
+                              200 ملف
+                           </div>
+                        </div>
                      </div>
                   </div>
                </div>

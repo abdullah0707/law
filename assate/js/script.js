@@ -61,7 +61,7 @@ function calender(month, year) {
     // DAYS OF WEEK HEADER
     html += '<tr>';
     for (var i = 0; i < weekDays.length; i++) {
-        html += '<td class="py-0" style="font-size: xx-small;">' + weekDays[i] + '</td>';
+        html += '<td class="py-0 ps-1" style="font-size: xx-small;">' + weekDays[i] + '</td>';
     }
     html += '</tr>';
 
@@ -77,7 +77,7 @@ function calender(month, year) {
         if (today !== day) {
             html += "<td class='normal fw-semibold numbar-day-calender px-2 py-2 fs-6'>" + day + "</td>";
         } else if (currMonth === month) {
-            html += "<td class='normal fw-semibold numbar-day-calender px-2 py-2 fs-6 rounded-circle background-danger text-white' style='width: 2.4em;height: 2em;'>" + day + "</td>";
+            html += "<td class='normal fw-semibold numbar-day-calender px-2 py-2 fs-6 rounded-circle bg-primary text-white' style='width: 2.4em;height: 2em;'>" + day + "</td>";
         } else {
             html += "<td class='normal fw-semibold numbar-day-calender px-2 py-2 fs-6'>" + day + "</td>";
         }
