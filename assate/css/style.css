@@ -448,3 +448,9 @@ input[type="search" i]:enabled:read-write::-webkit-search-cancel-button {
   vertical-align: 0.255em;
   border: 0 !important;
 }
+
+.color-cart{
+  background-color: #EBF3FC;
+  color: #0F6CBD;
+  font-size: x-small;
+}
